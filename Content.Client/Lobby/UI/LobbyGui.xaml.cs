@@ -38,9 +38,27 @@ namespace Content.Client.Lobby.UI
                 case LobbyGuiState.Default:
                     DefaultState.Visible = true;
                     RightSide.Visible = true;
+                    // WD EDIT START
+                    CharacterSetupState.Visible = false;
+                    Center.Visible = true;
+                    LabelName.Visible = true;
+                    LobbySong.Visible = true;
+                    LobbyBackground.Visible = true;
+                    DevInfoBanner.Visible = true;
+                    VoteContainer.Visible = true;
+                    // WD EDIT END
                     break;
                 case LobbyGuiState.CharacterSetup:
                     CharacterSetupState.Visible = true;
+                    // WD EDIT START
+                    Center.Visible = false;
+                    RightSide.Visible = false;
+                    LabelName.Visible = false;
+                    LobbySong.Visible = false;
+                    LobbyBackground.Visible = false;
+                    DevInfoBanner.Visible = false;
+                    VoteContainer.Visible = false;
+                    // WD EDIT END
 
                     var actualWidth = (float) UserInterfaceManager.RootControl.PixelWidth;
                     var setupWidth = (float) LeftSide.PixelWidth;

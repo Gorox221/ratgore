@@ -1,4 +1,3 @@
-using Content.Client._NF.Latejoin;
 using Content.Client.Audio;
 using Content.Client.GameTicking.Managers;
 using Content.Client.LateJoin;
@@ -56,7 +55,7 @@ namespace Content.Client.Lobby
 
             UpdateLobbyUi();
 
-            Lobby.CharacterPreview.CharacterSetupButton.OnPressed += OnSetupPressed;
+            // Lobby.CharacterPreview.CharacterSetupButton.OnPressed += OnSetupPressed; //WD EDIT
             Lobby.ManifestButton.OnPressed += OnManifestPressed;
             Lobby.ReadyButton.OnPressed += OnReadyPressed;
             Lobby.ReadyButton.OnToggled += OnReadyToggled;
@@ -184,6 +183,9 @@ namespace Content.Client.Lobby
 
             if (_gameTicker.ServerInfoBlob != null)
                 Lobby!.ServerInfo.SetInfoBlob(_gameTicker.ServerInfoBlob);
+
+            Lobby!.LabelName.SetMarkup("[font=\"Bedstead\" size=20] White Dream [/font]"); // WD EDIT
+            //Lobby!.ChangelogLabel.SetMarkup(Loc.GetString("ui-lobby-changelog")); // WD EDIT
         }
 
         private void UpdateLobbySoundtrackInfo(LobbySoundtrackChangedEvent ev)
@@ -248,5 +250,8 @@ namespace Content.Client.Lobby
 
             _consoleHost.ExecuteCommand($"toggleready {newReady}");
         }
+
+        // Removed some function for icon. If needed then get it from git version
+        // WD EDIT END
     }
 }
