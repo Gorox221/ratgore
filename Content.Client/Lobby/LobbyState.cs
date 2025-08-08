@@ -12,6 +12,7 @@ using Robust.Client.Console;
 using Robust.Client.ResourceManagement;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
+using Robust.Client.Graphics;
 using Robust.Shared.Timing;
 
 namespace Content.Client.Lobby
@@ -79,7 +80,6 @@ namespace Content.Client.Lobby
 
             if (Lobby != null)
             {
-                // ИСПРАВЛЕНО: Кнопка теперь в Lobby
                 Lobby.CharacterSetupButton.OnPressed -= OnSetupPressed;
                 Lobby.ManifestButton.OnPressed -= OnManifestPressed;
                 Lobby.ReadyButton.OnPressed -= OnReadyPressed;
@@ -196,13 +196,12 @@ namespace Content.Client.Lobby
 
         private void UpdateLobbySoundtrackInfo(LobbySoundtrackChangedEvent ev)
         {
-            // LobbySong
-            /*
             if (Lobby == null) return;
             if (ev.SoundtrackFilename == null)
+            {
                 Lobby.LobbySong.SetMarkup(Loc.GetString("lobby-state-song-no-song-text"));
-            else if (ev.SoundtrackFilename != null
-                && _resourceCache.TryGetResource<AudioResource>(ev.SoundtrackFilename, out var lobbySongResource))
+            }
+            else if (_resourceCache.TryGetResource<AudioResource>(ev.SoundtrackFilename, out var lobbySongResource))
             {
                 var lobbyStream = lobbySongResource.AudioStream;
                 var title = string.IsNullOrEmpty(lobbyStream.Title) ? Loc.GetString("lobby-state-song-unknown-title") : lobbyStream.Title;
@@ -210,7 +209,6 @@ namespace Content.Client.Lobby
                 var markup = Loc.GetString("lobby-state-song-text", ("songTitle", title), ("songArtist", artist));
                 Lobby.LobbySong.SetMarkup(markup);
             }
-            */
         }
 
         private void UpdateLobbyBackground()
@@ -219,21 +217,39 @@ namespace Content.Client.Lobby
 
             if (_gameTicker.LobbyBackground != null)
             {
-                Lobby.Background.Texture = _resourceCache.GetResource<TextureResource>(_gameTicker.LobbyBackground.Background);
-                
-                // LobbyBackground
-                /*
+                var path = _gameTicker.LobbyBackground.Background.ToString();
+
+                if (path.EndsWith(".rsi"))
+                {
+                    if (_resourceCache.TryGetResource<RSIResource>(path, out var rsiRes))
+                    {
+                        Lobby.Background.Texture = null;
+                        Lobby.Background.SetRSI(rsiRes.RSI);
+                    }
+                }
+                else
+                {
+                    if (_resourceCache.TryGetResource<TextureResource>(path, out var texRes))
+                    {
+                        Lobby.Background.SetRSI(null);
+                        Lobby.Background.Texture = texRes.Texture;
+                    }
+                }
+
                 var lobbyBackground = _gameTicker.LobbyBackground;
                 var name = string.IsNullOrEmpty(lobbyBackground.Name) ? Loc.GetString("lobby-state-background-unknown-title") : lobbyBackground.Name;
                 var artist = string.IsNullOrEmpty(lobbyBackground.Artist) ? Loc.GetString("lobby-state-background-unknown-artist") : lobbyBackground.Artist;
                 var markup = Loc.GetString("lobby-state-background-text", ("backgroundName", name), ("backgroundArtist", artist));
                 Lobby.LobbyBackground.SetMarkup(markup);
-                */
                 return;
             }
 
             _sawmill.Warning("_gameTicker.LobbyBackground was null! No lobby background selected.");
-            Lobby.Background.Texture = null;
+            if (Lobby != null)
+            {
+                Lobby.Background.SetRSI(null);
+                Lobby.Background.Texture = null;
+            }
         }
 
         private void SetReady(bool newReady)

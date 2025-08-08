@@ -1,7 +1,7 @@
 using Content.Shared.GameTicking.Prototypes;
 using Robust.Shared.Random;
-using Robust.Shared.Utility;
 using System.Linq;
+using Content.Shared._OS;
 
 namespace Content.Server.GameTicking;
 
@@ -13,10 +13,12 @@ public sealed partial class GameTicker
     [ViewVariables]
     private List<LobbyBackgroundPrototype> _lobbyBackgrounds = [];
 
-    private static readonly string[] WhitelistedBackgroundExtensions = new string[] {"png", "jpg", "jpeg", "webp"};
+    private static readonly string[] WhitelistedBackgroundExtensions = new string[] {"png", "jpg", "jpeg", "webp", "rsi"};
 
     private void InitializeLobbyBackground()
     {
+        _lobbyBackgrounds.Clear();
+
         foreach (var prototype in _prototypeManager.EnumeratePrototypes<LobbyBackgroundPrototype>())
         {
             if (!WhitelistedBackgroundExtensions.Contains(prototype.Background.Extension))
@@ -31,7 +33,8 @@ public sealed partial class GameTicker
         RandomizeLobbyBackground();
     }
 
-    private void RandomizeLobbyBackground() {
-        LobbyBackground = _lobbyBackgrounds!.Any() ? _robustRandom.Pick(_lobbyBackgrounds!) : null;
+    private void RandomizeLobbyBackground()
+    {
+        LobbyBackground = _lobbyBackgrounds.Count > 0 ? _robustRandom.Pick(_lobbyBackgrounds) : null;
     }
 }

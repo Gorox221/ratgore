@@ -7,14 +7,18 @@
     xmlns:widgets="clr-namespace:Content.Client.UserInterface.Systems.Chat.Widgets"
     xmlns:cc="clr-namespace:Content.Client.Administration.UI.CustomControls"
     xmlns:changelog="clr-namespace:Content.Client.Changelog"
-    xmlns:lobbyUi="clr-namespace:Content.Client.Lobby.UI">
+    xmlns:lobbyUi="clr-namespace:Content.Client.Lobby.UI"
+    xmlns:animatedBackground="clr-namespace:Content.Client._OS.UI.AnimatedBackground">
 
     <LayoutContainer Name="RootContainer" HorizontalExpand="True" VerticalExpand="True">
         
-        <TextureRect Name="Background" Access="Public" 
-                     HorizontalExpand="True" VerticalExpand="True"
-                     Stretch="KeepAspectCovered"
-                     MouseFilter="Ignore" />
+        <animatedBackground:AnimatedBackgroundControl 
+            Name="Background" 
+            Access="Public" 
+            HorizontalExpand="True" 
+            VerticalExpand="True"
+            Stretch="KeepAspectCovered"
+            MouseFilter="Ignore" />
 
         <BoxContainer Name="MainContainer" Orientation="Vertical" HorizontalExpand="True" VerticalExpand="True">
             
