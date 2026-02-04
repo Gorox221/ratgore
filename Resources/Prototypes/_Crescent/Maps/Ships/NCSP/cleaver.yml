@@ -4,7 +4,7 @@
 - type: vessel
   id: Cleaver
   name: КВСТ Клевер
-  description: Тяжелый истребитель Синдиката.
+  description: Тяжелый истребитель Синдиката c EMP пушкой.
   price: 50000 #50000 appraisegrid
   category: Medium
   group: None
