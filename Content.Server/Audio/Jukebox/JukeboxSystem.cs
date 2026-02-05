@@ -96,14 +96,14 @@ public sealed class JukeboxSystem : SharedJukeboxSystem
     private void OnJukeboxStop(Entity<JukeboxComponent> entity, ref JukeboxStopMessage args)
     {
         Stop(entity);
-
-        RemComp<ActiveInstrumentComponent>(entity); // Ratgore change
     }
 
     private void Stop(Entity<JukeboxComponent> entity)
     {
         Audio.SetState(entity.Comp.AudioStream, AudioState.Stopped);
         Dirty(entity);
+
+        RemComp<ActiveInstrumentComponent>(entity); // Ratgore change: умные вещи говорит нейронка
     }
 
     private void OnJukeboxSelected(EntityUid uid, JukeboxComponent component, JukeboxSelectedMessage args)
