@@ -64,3 +64,7 @@
         posY: -4000
         IFFColor: IndianRed
         IFFFaction: TFSC
+      Deepbelt:
+        gameMapID: Deepbelt
+        posX: 0
+        posY: 0

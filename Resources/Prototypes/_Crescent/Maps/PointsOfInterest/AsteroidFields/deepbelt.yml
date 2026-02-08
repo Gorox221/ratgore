@@ -13,4 +13,4 @@
             state: asteroids
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Пояс "Дип"'
+          mapNameTemplate: 'Факел-7'
