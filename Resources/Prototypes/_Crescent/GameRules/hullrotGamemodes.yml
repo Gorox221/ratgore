@@ -402,10 +402,10 @@
   showInVote: true
   description: Corporate forces from Shinohara and Pang Tai are deployed onto a simulation to conduct live fire tests.
   rules:
-  - PlanetfallMap
+  - PlanetfallGameRule
 
 - type: entity
-  id: PlanetfallMap
+  id: PlanetfallGameRule
   parent: BaseGameRule
   categories: [ HideSpawnMenu ]
   components:

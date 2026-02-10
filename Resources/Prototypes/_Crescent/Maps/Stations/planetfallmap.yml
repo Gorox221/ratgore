@@ -1,10 +1,10 @@
 - type: gameMap
   id: PlanetfallMap
   mapName: 'NT Isolated Pressurized Warfare Simulation Research Outpost'
-  mapPath: /Maps/_Crescent/Stations/tatsumoto.yml
+  mapPath: /Maps/_Crescent/Stations/Planetfallmap.yml
   minPlayers: 0
   stations:
-    Planetfall:
+    PlanetfallMap:
       stationProto: StandardCrescentStation
       gridComponents:
         - type: BlockShipWeaponProjectileGrid
@@ -18,10 +18,6 @@
           mapNameTemplate: 'NT Isolated Pressurized Warfare Simulation Research Outpost'
         - type: VesselDesignation
           designation: vessel-designation-headquarters
-        - type: VesselDescription
-          description: null
-        - type: VesselMusic
-          ambientMusicPrototype: null
         - type: Grammar
           attributes:
             proper: true
