@@ -178,7 +178,7 @@
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 2 #idk
+    lifetime: 2 #200
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/pdtcasing.rsi
     layers:
