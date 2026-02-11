@@ -49,7 +49,7 @@
             prob: 0.02
             orGroup: rock
           - id: WallRockArtifactFragment
-            prob: 0.02
+            prob: 0.002
             orGroup: rock
           - id: WallRockPlasma
             prob: 0.015
@@ -101,7 +101,7 @@
             prob: 0.05
             orGroup: rock
           - id: WallRockArtifactFragment
-            prob: 0.03
+            prob: 0.005
             orGroup: rock
           - id: WallRockPlasma
             prob: 0.03
@@ -116,7 +116,7 @@
             prob: 0.01
             orGroup: rock
           - id: RandomArtifactSpawner20
-            prob: 0.02
+            prob: 0.002
             orGroup: rock
 
 - type: entity
