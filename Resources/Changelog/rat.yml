@@ -340,5 +340,12 @@ Entries:
     id: 47
     time: '2026-02-11T05:09:43.0000000+00:00'
     url: https://github.com/ss14-art/ratgore/pull/38
+  - author: freycyik
+    changes:
+      - type: Tweak
+        message: Изменено скорость шаттла "обломок" 35>20
+    id: 48
+    time: '2026-02-11T12:55:44.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/39
 Name: Rat
 Order: -1
