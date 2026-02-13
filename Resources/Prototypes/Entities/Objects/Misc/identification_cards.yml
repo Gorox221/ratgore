@@ -1105,3 +1105,24 @@
   - type: NanoChatCard # DeltaV
     notificationsMuted: true
     listNumber: false
+
+# Ratgore start
+
+- type: entity
+  parent: IDCardStandard
+  id: RatIDCard
+  name: passenger ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: department
+      color: "#878787"
+    - state: subdepartment
+      color: "#878787"
+    - state: passenger
+  - type: Access
+    groups:
+    - AllAccess
+
+# Ratgore end

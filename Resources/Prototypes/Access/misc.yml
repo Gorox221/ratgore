@@ -52,6 +52,59 @@
   - BlueshieldOfficer # Goobstation - Add BSO Access
   - NanotrasenRepresentative # Goobstation - Add NTR Access
   - Magistrate # Goobstation - Add Magistrate Access
+# Ratgore start
+  - NCWLGeneral
+  - NCWLCommand
+  - NCWLKommissar
+  - NCWLAdministrator
+  - NCWLArmory
+  - NCWLJail
+  - NCWLFunds
+  - SyndicateBasic
+  - SyndicateCommand
+  - SyndicateGorlex
+  - SyndicateInterdyne
+  - SyndicateSaws
+  - SyndicateRamzi
+  - SyndicateRingleader
+  - SyndicateFunds
+  - Empire
+  - Archmaester
+  - EmpireSoldier
+  - EmpireNoble
+  - EmpireAdjutant
+  - EmpireGovernor
+  - LogisticsWealth
+  - ScribesGuild
+  - Advocatus
+  - DSMFunds
+  - Hunter
+  - HunterSenior
+  - HunterOverseer
+  - Shinohara
+  - ShinoharaOfficer
+  - ShinoharaSecurity
+  - ShinoharaExecutive
+  - Minuteman
+  - MinutemanRankingOfficer
+  - MinutemanPrison
+  - MinutemanMarshal
+  - CMMFunds
+  - Antiquarian
+  - GliessDockmaster
+  - GliessSheriff
+  - Kommandant
+  - AuthorityRanking
+  - Authority
+  - Authoritymed
+  - AuthoritySupply
+  - Arabet
+  - Thukker
+  - Alseik
+  - AlseikServile
+  - Families
+  - Izdari
+# Ratgore end
 
 - type: accessGroup
   id: General
