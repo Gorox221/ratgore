@@ -4,6 +4,7 @@ using Content.Shared.Whitelist;
 using Robust.Shared.Map;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Timing;
+using System.Linq;
 
 namespace Content.Shared.Storage.EntitySystems;
 
@@ -58,7 +59,7 @@ public sealed class MagnetPickupSystem : EntitySystem
                     continue;
             }
 
-            // Базовая проверка наличия места
+            // No space
             if (!_storage.HasSpace((uid, storage)))
                 continue;
 
@@ -67,6 +68,8 @@ public sealed class MagnetPickupSystem : EntitySystem
             var finalCoords = xform.Coordinates;
             var moverCoords = _transform.GetMoverCoordinates(uid, xform);
 
+            var nearbyItems = new List<(EntityUid entity, float distance)>();
+            
             foreach (var near in _lookup.GetEntitiesInRange(uid, comp.Range, LookupFlags.Dynamic | LookupFlags.Sundries))
             {
                 if (_whitelistSystem.IsWhitelistFail(storage.Whitelist, near))
@@ -78,6 +81,19 @@ public sealed class MagnetPickupSystem : EntitySystem
                 if (near == parentUid)
                     continue;
 
+                var nearXform = Transform(near);
+                var distance = (_transform.GetWorldPosition(nearXform) - _transform.GetWorldPosition(xform)).Length();
+                
+                nearbyItems.Add((near, distance));
+            }
+
+            var closestItems = nearbyItems
+                .OrderBy(item => item.distance)
+                .Take(comp.MaxItems)
+                .Select(item => item.entity);
+
+            foreach (var near in closestItems)
+            {
                 // TODO: Probably move this to storage somewhere when it gets cleaned up
                 // TODO: This sucks but you need to fix a lot of stuff to make it better
                 // the problem is that stack pickups delete the original entity, which is fine, but due to

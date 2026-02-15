@@ -24,4 +24,7 @@ public sealed partial class MagnetPickupComponent : Component
     // hullrot added,  if it being worn is actually required aka bypass slot flag requirement.
     [ViewVariables(VVAccess.ReadWrite), DataField("requireWorn")]
     public bool requireWorn = true;
+
+    [ViewVariables(VVAccess.ReadWrite), DataField("maxItems")]
+    public int MaxItems = 30;
 }
