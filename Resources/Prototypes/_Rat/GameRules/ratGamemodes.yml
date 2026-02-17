@@ -64,6 +64,12 @@
         posY: -4000
         IFFColor: IndianRed
         IFFFaction: TFSC
+      TribalHideout:
+        gameMapID: TribalHideout
+        posX: -8000
+        posY: -1500
+        IFFColor: White
+        IFFFaction: TAP
       Deepbelt:
         gameMapID: Deepbelt
         posX: 0
