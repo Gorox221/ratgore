@@ -4,7 +4,7 @@
   parent: BaseTurretShipgun
   id: WeaponTurretCurse
   suffix: Medium Energy
-  name: 300w 'Curse' energized ion bolt cannon
+  name: 300w 'Curse' EMP Projector
   description: A medium energy platform that shoots ionized hardlight that interferes with shuttle electronics.
   components:
     - type: Sprite
@@ -63,8 +63,8 @@
   parent: BaseTurretShipgun
   id: WeaponTurretCurseNavy
   suffix: Medium Energy, Navy
-  name: navy-issue 300w 'Curse' energized ion bolt cannon
-  description: A medium energy platform that shoots ionized hardlight that interferes with shuttle electronics. Seems to be issued by Merchant House Soga.
+  name: Navy 300w 'Mandate' EMP Projector
+  description: A medium energy platform that shoots ionized hardlight that interferes with shuttle electronics. Upgraded electronics give it more sustained fire.
   components:
     - type: Sprite
       sprite: _Crescent/Objects/Turrets/Laser/curse.rsi
@@ -124,7 +124,7 @@
   parent: BaseTurretShipgun
   id: WeaponTurretRetribution
   suffix: Small Laser
-  name: 200cc 'Retribution' small laser gatling
+  name: 200cc 'Retribution' Pulse Laser
   description: A light energy weapons platform that converts energy into hardlight and flings it at high speeds.
   components:
     - type: Sprite
@@ -183,8 +183,8 @@
   parent: BaseTurretShipgun
   id: WeaponTurretRetributionNavy
   suffix: Small Laser, Navy
-  name: navy-issue 200cc 'Retribution' small laser gatling
-  description: A light energy weapons platform that converts energy into hardlight and flings it at high speeds. Seems to be issued by the Imperial Navy.
+  name: Navy 200cc 'Solaris' Pulse Laser
+  description: A light energy weapons platform that converts energy into hardlight and flings it at high speeds. It's upgraded hardlight generator lets it fire faster while its power reserves last.
   components:
     - type: Sprite
       sprite: _Crescent/Objects/Turrets/Laser/retribution.rsi
@@ -244,8 +244,8 @@
   parent: BaseTurretShipgun
   id: WeaponTurretAbsolution
   suffix: Medium Laser
-  name: 350cc 'Absolution' hardlight cannon
-  description: A medium laser weapons platform that creates hardlight bolts and flings them at targets.
+  name: 350cc 'Glare' Burst Laser
+  description: A medium laser weapons platform that creates hardlight bolts and flings them at targets. Fires in compact bursts capable of ablating hull.
   components:
     - type: Sprite
       sprite: _Crescent/Objects/Turrets/Laser/absolution.rsi
@@ -305,8 +305,8 @@
   parent: BaseTurretShipgun
   id: WeaponTurretAbsolutionNavy
   suffix: Medium Laser, Navy
-  name: navy-issue 350cc 'Absolution' hardlight cannon
-  description: A medium laser weapons platform that creates hardlight bolts and flings them at targets. This one seems to be issued by the Imperial Navy.
+  name: Navy 350cc 'Absolution' Burst Laser
+  description: A medium laser weapons platform that creates hardlight bolts and flings them at targets. Fires in even longer bursts but runs dry quicker.
   components:
     - type: Sprite
       sprite: _Crescent/Objects/Turrets/Laser/absolution.rsi
@@ -368,8 +368,8 @@
   parent: BaseTurretShipgun
   id: WeaponTurretDamnation
   suffix: Large Laser
-  name: 600cc 'Damnation' hardlight carronade
-  description: A large energy weapons platform that fires supercharged hardlight bolts that explode on impact.
+  name: 600cc 'Damnation' Carronade
+  description: A large energy weapons platform that fires hardlight bolts that explode on impact.
   components:
     - type: Sprite
       sprite: _Crescent/Objects/Turrets/Laser/damnation.rsi
@@ -424,8 +424,8 @@
   parent: BaseTurretShipgun
   id: WeaponTurretDamnationNavy
   suffix: Large Energy, Navy
-  name: navy-issue 600cc 'Damnation' hardlight carronade
-  description: A large energy weapons platform that fires supercharged hardlight bolts that explode on impact. This one seems to be issued by the Imperial Navy.
+  name: Navy 600cc 'Dominus' Carronade
+  description: A large energy weapons platform that fires supercharged hardlight bolts that explode on impact. Slight upgrades make it better on all fronts compared to its common variant.
   components:
     - type: Sprite
       sprite: _Crescent/Objects/Turrets/Laser/damnation.rsi
@@ -460,7 +460,7 @@
         params:
           variation: 0.12
     - type: RechargeBasicEntityAmmo
-      rechargeCooldown: 5
+      rechargeCooldown: 0.7
       rechargeSound:
         path: /Audio/Weapons/Guns/Bolt/lmg_bolt_closed.ogg
         params:

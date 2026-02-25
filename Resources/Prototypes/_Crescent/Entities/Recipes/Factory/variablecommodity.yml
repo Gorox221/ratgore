@@ -211,16 +211,7 @@
     Steel: 8
     Uranium: 3
   outputs:
-    Magazine20mmGyrostable: 1
-
-- type: factoryRecipe
-  id: FabricateMagazine20mmScreamerPlasma
-  name: fabricate 20mm plasma drum
-  inputs:
-    Steel: 8
-    Plasma: 3
-  outputs:
-    Magazine20mmPlasma: 1
+    Magazine20mmFrag: 1
 
 #35mm Scout Ammo
 - type: factoryRecipe
@@ -260,7 +251,7 @@
     Plasma: 3
     Uranium: 8
   outputs:
-    Magazine50mmGyrostable: 1
+    Magazine50mmHE: 1
 
 - type: factoryRecipe
   id: FabricateMagazine50mmWhistlerPlasma
@@ -300,7 +291,7 @@
     Uranium: 13
     Plasma: 3
   outputs:
-    MagazineGistumGyrostable: 1
+    MagazineGistumAP: 1
 
 - type: factoryRecipe
   id: FabricateMagazine90mmPlasma
@@ -310,4 +301,4 @@
     Uranium: 3
     Plasma: 13
   outputs:
-    MagazineGistumPlasma: 1
+    MagazineGistumHE: 1

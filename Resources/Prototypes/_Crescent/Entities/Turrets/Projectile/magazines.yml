@@ -1,8 +1,8 @@
 #vulcan
 - type: entity
   id: Magazine35mm
-  name: 35mm Armor Piercing drum magazine
-  description: A munitions drum designed for 35mm rotary cannons. This one contains standard armor-piercing rounds.
+  name: 35mm Armor Piercing drum
+  description: A munitions drum designed for 35mm autocannons. Contains standard armor-piercing rounds. Effective against armored targets.
   parent: BaseItem
   components:
   - type: Tag
@@ -14,7 +14,7 @@
       tags:
         - Cartridge35mm
     proto: Cartridge35mm
-    capacity: 250
+    capacity: 80
     soundRack:
       path: /Audio/Weapons/Guns/Bolt/lmg_bolt_closed.ogg
       params:
@@ -35,6 +35,7 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
+    scale: 0.7, 0.7
   - type: MagazineVisuals
     magState: mag
     steps: 2
@@ -43,8 +44,8 @@
 
 - type: entity
   id: Magazine35mmHE
-  name: 35mm High Explosive feeder drum
-  description: A munitions drum designed for 35mm rotary cannons. This one contains special High Explosive projectiles.
+  name: 35mm High Explosive drum
+  description: A munitions drum designed for 35mm autocannons. Contains High Explosive projectiles. Effective against light targets and infantry.
   parent: BaseItem
   components:
   - type: Tag
@@ -56,136 +57,7 @@
       tags:
         - Cartridge35mmHE
     proto: Bullet35mmHE
-    capacity: 250
-    soundRack:
-      path: /Audio/Weapons/Guns/Bolt/lmg_bolt_closed.ogg
-      params:
-        variation: 0.05
-    soundInsert:
-      path: /Audio/Weapons/Guns/MagIn/rifle_load.ogg
-      params:
-        variation: 0.05
-  - type: Item
-    size: Large
-  - type: ContainerContainer
-    containers:
-      ballistic-ammo: !type:Container
-  - type: Sprite
-    sprite: _Crescent/Objects/Turrets/Ammunition/Magazine/whistler.rsi
-    layers:
-    - state: base-gyrostable
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-  - type: MagazineVisuals
-    magState: mag
-    steps: 2
-    zeroVisible: false
-  - type: Appearance
-
-
-#whistler
-
-- type: entity
-  id: Magazine50mm
-  name: 50mm FMJ USM feeder drum
-  description: A munitions drum designed for 50mm repeater cannons.
-  parent: BaseItem
-  components:
-  - type: Tag
-    tags:
-    - Magazine50mm
-  - type: BallisticAmmoProvider
-    mayTransfer: true
-    whitelist:
-      tags:
-        - Cartridge50mm
-    proto: Cartridge50mm
-    capacity: 50
-    soundRack:
-      path: /Audio/Weapons/Guns/Bolt/lmg_bolt_closed.ogg
-      params:
-        variation: 0.05
-    soundInsert:
-      path: /Audio/Weapons/Guns/MagIn/rifle_load.ogg
-      params:
-        variation: 0.05
-  - type: Item
-    size: Large
-  - type: ContainerContainer
-    containers:
-      ballistic-ammo: !type:Container
-  - type: Sprite
-    sprite: _Crescent/Objects/Turrets/Ammunition/Magazine/whistler.rsi
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-  - type: MagazineVisuals
-    magState: mag
-    steps: 2
-    zeroVisible: false
-  - type: Appearance
-
-- type: entity
-  id: Magazine50mmGyrostable
-  name: 50mm gyrostable USM feeder drum
-  description: A munitions drum designed for 50mm repeater cannons. This one contains special gyrostable projectiles.
-  parent: BaseItem
-  components:
-  - type: Tag
-    tags:
-    - Magazine50mm
-  - type: BallisticAmmoProvider
-    mayTransfer: true
-    whitelist:
-      tags:
-        - Cartridge50mmHE
-    proto: Bullet50mmHE
-    capacity: 50
-    soundRack:
-      path: /Audio/Weapons/Guns/Bolt/lmg_bolt_closed.ogg
-      params:
-        variation: 0.05
-    soundInsert:
-      path: /Audio/Weapons/Guns/MagIn/rifle_load.ogg
-      params:
-        variation: 0.05
-  - type: Item
-    size: Large
-  - type: ContainerContainer
-    containers:
-      ballistic-ammo: !type:Container
-  - type: Sprite
-    sprite: _Crescent/Objects/Turrets/Ammunition/Magazine/whistler.rsi
-    layers:
-    - state: base-gyrostable
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-  - type: MagazineVisuals
-    magState: mag
-    steps: 2
-    zeroVisible: false
-  - type: Appearance
-
-- type: entity
-  id: Magazine50mmPlasma
-  name: 50mm plasma-core USM feeder drum
-  description: A munitions drum designed for 50mm cannons. This one contains special photon-plasma core projectiles.
-  parent: BaseItem
-  components:
-  - type: Tag
-    tags:
-    - Magazine50mm
-  - type: BallisticAmmoProvider
-    mayTransfer: true
-    whitelist:
-      tags:
-        - Cartridge50mmSAPHE
-    proto: Bullet50mmSAPHE
-    capacity: 30
+    capacity: 80
     soundRack:
       path: /Audio/Weapons/Guns/Bolt/lmg_bolt_closed.ogg
       params:
@@ -206,6 +78,139 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
+    scale: 0.7, 0.7
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+
+#whistler
+
+- type: entity
+  id: Magazine50mm
+  name: 50mm Armor Piercing drum
+  description: A munitions drum designed for 50mm repeater cannons. Contains standard armor-piercing rounds. Effective against armored targets.
+  parent: BaseItem
+  components:
+  - type: Tag
+    tags:
+    - Magazine50mm
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge50mm
+    proto: Cartridge50mm
+    capacity: 120
+    soundRack:
+      path: /Audio/Weapons/Guns/Bolt/lmg_bolt_closed.ogg
+      params:
+        variation: 0.05
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/rifle_load.ogg
+      params:
+        variation: 0.05
+  - type: Item
+    size: Large
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Crescent/Objects/Turrets/Ammunition/Magazine/whistler.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    scale: 0.9, 0.9
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: Magazine50mmHE
+  name: 50mm High Explosive drum
+  description: A munitions drum designed for 50mm repeater cannons. This one contains High Explosive projectiles. Effective against light targets and infantry.
+  parent: BaseItem
+  components:
+  - type: Tag
+    tags:
+    - Magazine50mm
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge50mmHE
+    proto: Bullet50mmHE
+    capacity: 120
+    soundRack:
+      path: /Audio/Weapons/Guns/Bolt/lmg_bolt_closed.ogg
+      params:
+        variation: 0.05
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/rifle_load.ogg
+      params:
+        variation: 0.05
+  - type: Item
+    size: Large
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Crescent/Objects/Turrets/Ammunition/Magazine/whistler.rsi
+    layers:
+    - state: base-gyrostable
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    scale: 0.9, 0.9
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: Magazine50mmPlasma
+  name: 50mm SAPHE drum
+  description: A munitions drum designed for 50mm cannons. Contains Semi-Armor Piercing High Explosive projectiles. Effective against most targets.
+  parent: BaseItem
+  components:
+  - type: Tag
+    tags:
+    - Magazine50mm
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge50mmSAPHE
+    proto: Bullet50mmSAPHE
+    capacity: 120
+    soundRack:
+      path: /Audio/Weapons/Guns/Bolt/lmg_bolt_closed.ogg
+      params:
+        variation: 0.05
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/rifle_load.ogg
+      params:
+        variation: 0.05
+  - type: Item
+    size: Large
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Crescent/Objects/Turrets/Ammunition/Magazine/whistler.rsi
+    layers:
+    - state: base-plasma
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    scale: 0.9, 0.9
   - type: MagazineVisuals
     magState: mag
     steps: 2
@@ -217,8 +222,8 @@
 
 - type: entity
   id: Magazine20mm
-  name: 20mm FMJ USM feeder drum
-  description: A munitions drum designed for 20mm repeater cannons.
+  name: 20mm FMJ drum
+  description: A munitions drum designed for 20mm gatling cannons. It's standard lead-core projectiles are effective against light targets and missiles.
   parent: BaseItem
   components:
   - type: Tag
@@ -251,6 +256,7 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
+    scale: 0.75, 0.75
   - type: MagazineVisuals
     magState: mag
     steps: 2
@@ -258,9 +264,9 @@
   - type: Appearance
 
 - type: entity
-  id: Magazine20mmGyrostable
-  name: 20mm gyrostable USM feeder drum
-  description: A munitions drum designed for 20mm repeater cannons. This one contains special gyrostable projectiles.
+  id: Magazine20mmFrag
+  name: 20mm Fragmentation drum
+  description: A munitions drum designed for 20mm gatling cannons. Contains dedicated anti-personnel rounds that deal degligible damage to hull.
   parent: BaseItem
   components:
   - type: Tag
@@ -289,52 +295,11 @@
   - type: Sprite
     sprite: _Crescent/Objects/Turrets/Ammunition/Magazine/screamer.rsi
     layers:
-    - state: base-gyrostable
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-  - type: MagazineVisuals
-    magState: mag
-    steps: 2
-    zeroVisible: false
-  - type: Appearance
-
-- type: entity
-  id: Magazine20mmPlasma
-  name: 20mm plasma-core USM feeder drum
-  description: A munitions drum designed for 20mm repeater cannons. This one contains special photon-plasma core projectiles.
-  parent: BaseItem
-  components:
-  - type: Tag
-    tags:
-    - Magazine20mm
-  - type: BallisticAmmoProvider
-    mayTransfer: true
-    whitelist:
-      tags:
-        - Cartridge20mmPlasma
-    proto: Bullet20mmPlasma
-    capacity: 100
-    soundRack:
-      path: /Audio/Weapons/Guns/Bolt/lmg_bolt_closed.ogg
-      params:
-        variation: 0.05
-    soundInsert:
-      path: /Audio/Weapons/Guns/MagIn/rifle_load.ogg
-      params:
-        variation: 0.05
-  - type: Item
-    size: Large
-  - type: ContainerContainer
-    containers:
-      ballistic-ammo: !type:Container
-  - type: Sprite
-    sprite: _Crescent/Objects/Turrets/Ammunition/Magazine/screamer.rsi
-    layers:
     - state: base-plasma
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
+    scale: 0.75, 0.75
   - type: MagazineVisuals
     magState: mag
     steps: 2
@@ -346,6 +311,7 @@
 - type: entity
   id: MagazineCorpus
   name: "88mm munitions feeder box"
+  description: A large box of ammunition compatible with 88mm Flak launchers.
   parent: BaseItem
   components:
   - type: BallisticAmmoProvider
@@ -354,7 +320,7 @@
       tags:
         - CorpusShell
     proto: CorpusCartridge
-    capacity: 15
+    capacity: 30
   - type: Item
     size: Normal
   - type: Sprite
@@ -368,7 +334,8 @@
 
 - type: entity
   id: MagazineGistum
-  name: 90mm FMJ ballistic shell clip
+  name: 90mm APHE clip
+  description: Three 5 round clips bundled together for with the mighty Gistum autocannon. Contains Armor-Piercing High Explosive shells that are effective against most targets.
   parent: BaseItem
   components:
   - type: MultiHandedItem
@@ -388,6 +355,7 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
+    scale: 0.75, 0.75
   - type: MagazineVisuals
     magState: mag
     steps: 6
@@ -398,8 +366,9 @@
       - GistumClip
 
 - type: entity
-  id: MagazineGistumGyrostable
-  name: 90mm gyrostable ballistic shell clip
+  id: MagazineGistumAP
+  name: 90mm Armor Piercing clip
+  description: Three 5 round clips bundled together for with the mighty Gistum autocannon. Contains Armor-Piercing shells effective against heavily armored targets.
   parent: BaseItem
   components:
   - type: MultiHandedItem
@@ -419,6 +388,7 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
+    scale: 0.75, 0.75
   - type: MagazineVisuals
     magState: mag
     steps: 6
@@ -429,8 +399,9 @@
       - GistumClip
 
 - type: entity
-  id: MagazineGistumPlasma
-  name: 90mm plasma-core ballistic shell clip
+  id: MagazineGistumHE
+  name: 90mm High Explosive clip
+  description: Three 5 round clips bundled together for with the mighty Gistum autocannon. Contains High Explosive shells most effective against light targets.
   parent: BaseItem
   components:
   - type: MultiHandedItem
@@ -450,6 +421,7 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
+    scale: 0.75, 0.75
   - type: MagazineVisuals
     magState: mag
     steps: 6

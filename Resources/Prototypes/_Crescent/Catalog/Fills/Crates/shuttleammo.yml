@@ -287,17 +287,6 @@
         amount: 12
 
 - type: entity
-  id: Crate20mmAmmoPlasma
-  parent: N14CrateAluminium
-  name: 20mm PC 'Screamer' carbine magazine crate
-  description: 12 boxes of PC ammunition for the 'Screamer' weapon platform. Superior payload at the cost of reduced range.
-  components:
-  - type: StorageFill
-    contents:
-      - id: Magazine20mmPlasma
-        amount: 12
-
-- type: entity
   id: Crate20mmAmmoGyrostable
   parent: N14CrateAluminium
   name: 20mm Gyrostable 'Screamer' carbine magazine crate
@@ -305,7 +294,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: Magazine20mmGyrostable
+      - id: Magazine20mmFrag
         amount: 12
 
 - type: entity
@@ -373,7 +362,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: Magazine50mmGyrostable
+      - id: Magazine50mmHE
         amount: 8
 
 - type: entity
@@ -417,7 +406,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: MagazineGistumPlasma
+      - id: MagazineGistumHE
         amount: 6
 
 - type: entity
@@ -428,7 +417,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: MagazineGistumGyrostable
+      - id: MagazineGistumAP
         amount: 6
 
 - type: entity

@@ -22293,7 +22293,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: Magazine50mmGyrostable
+- proto: Magazine50mmHE
   entities:
   - uid: 1888
     components:

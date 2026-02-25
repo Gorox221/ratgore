@@ -4,8 +4,8 @@
   parent: BaseTurretShipgun
   id: WeaponTurretStarburst
   suffix: Small Hybrid
-  name: 150cc 'Starburst' hybrid plasma gatling
-  description: A light hybrid weapons platform that superheats unstable units of plasma and flings them at high speeds at targets. The plasma projectiles dissipate rapidly, but pack a punch.
+  name: 150cc 'Starburst' Plasma Gatling
+  description: A light hybrid weapons platform that superheats unstable units of plasma and flings them at high speeds at targets. The plasma projectiles are inaccurate, but pack a punch.
   components:
     - type: Sprite
       sprite: _Crescent/Objects/Turrets/Hybrid/starburst.rsi
@@ -66,8 +66,8 @@
   parent: BaseTurretShipgun
   id: WeaponTurretBolter
   suffix: Medium Hybrid
-  name: 300cc 'Bolter' hybrid plasma caster
-  description: A medium hybrid weapons platform that superheats unstable units of plasma and flings them at high speeds at targets. The plasma projectiles dissipate rapidly, but pack a punch.
+  name: 300cc 'Bolter' Plasma Caster
+  description: A medium hybrid weapons platform that superheats unstable units of plasma and flings them at high speeds at targets. The plasma projectiles are inaccurate, but cause a concentrated explosion on target.
   components:
     - type: Sprite
       sprite: _Crescent/Objects/Turrets/Hybrid/bolter.rsi
@@ -128,8 +128,8 @@
   parent: BaseTurretShipgun
   id: WeaponTurretMauler
   suffix: Large Hybrid
-  name: 500cc 'Mauler' hybrid plasma gatling
-  description: A large hybrid weapons platform that superheats unstable units of plasma and flings them at high speeds at targets. The plasma projectiles dissipate rapidly, but pack a punch.
+  name: 500cc 'Mauler' Plasma Howitzer
+  description: Fires large and concentrated bolts of plasma capable of dealing with any armor. Quite inaccurate.
   components:
     - type: Sprite
       sprite: _Crescent/Objects/Turrets/Hybrid/mauler.rsi

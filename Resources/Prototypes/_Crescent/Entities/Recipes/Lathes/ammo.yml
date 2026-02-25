@@ -459,19 +459,11 @@
 
 - type: latheRecipe
   id: Screamer20mmGyrostableRecipe
-  result: Magazine20mmGyrostable
+  result: Magazine20mmFrag
   completetime: 2
   materials:
     Steel: 1500
     Uranium: 500
-
-- type: latheRecipe
-  id: Screamer20mmPlasmaRecipe
-  result: Magazine20mmPlasma
-  completetime: 2
-  materials:
-    Steel: 1500
-    Plasma: 1000
 
 #35mm Scout Ammo
 - type: latheRecipe
@@ -502,7 +494,7 @@
 
 - type: latheRecipe
   id: Whistler50mmGyrostableRecipe
-  result: Magazine50mmGyrostable
+  result: Magazine50mmHE
   completetime: 2
   materials:
     Steel: 3000
@@ -538,7 +530,7 @@
 
 - type: latheRecipe
   id: Gistum90mmGyrostableRecipe
-  result: MagazineGistumGyrostable
+  result: MagazineGistumAP
   completetime: 2
   materials:
     Steel: 4000
@@ -547,7 +539,7 @@
 
 - type: latheRecipe
   id: Gistum90mmPlasmaRecipe
-  result: MagazineGistumPlasma
+  result: MagazineGistumHE
   completetime: 2
   materials:
     Steel: 4000

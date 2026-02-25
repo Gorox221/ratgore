@@ -162,8 +162,8 @@
   components:
   - type: ProjectileSpread
     proto: CorpusProjectile
-    count: 3
-    spread: 3
+    count: 4
+    spread: 4
 
 #pithis
 
