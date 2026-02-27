@@ -60,9 +60,6 @@
           - id: WallRockTungsten
             prob: 0.015
             orGroup: rock
-          - id: RockElementalSpawner
-            prob: 0.005
-            orGroup: rock
 
 - type: entity
   id: RatBaseAsteroidRich
@@ -111,9 +108,6 @@
             orGroup: rock
           - id: WallRockTungsten
             prob: 0.03
-            orGroup: rock
-          - id: RockElementalSpawner
-            prob: 0.01
             orGroup: rock
           - id: RandomArtifactSpawner20
             prob: 0.002
