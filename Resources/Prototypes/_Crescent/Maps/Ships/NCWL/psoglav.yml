@@ -34,4 +34,8 @@
           designation: vessel-designation-mining
         - type: VesselDescription
           description: Rickety, rusty, and borderline derelict. It'll last a few more trips. 
+        - type: StationJobs
+          overflowJobs: []
+          availableJobs:
+            WorkerNCWL: [ 3, 3 ]
 
