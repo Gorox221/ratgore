@@ -24,15 +24,15 @@
       delay: 6
       fx: EffectRCDDeconstruct6
     - type: Destructible
-      thresholds:
-      - trigger:
-          !type:DamageTrigger
-          damage: 500
-        behaviors:
-        - !type:DoActsBehavior
-          acts: ["Destruction"]
-         - !type:PlaySoundBehavior
-          sound:
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 500
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
           collection: MetalSlam
     - type: Sprite
       sprite: Structures/Doors/Airlocks/Standard/firelock.rsi
