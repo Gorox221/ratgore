@@ -17,8 +17,8 @@
     - type: DeviceNetworkRequiresPower
     - type: InteractionOutline
     - type: Damageable
-     damageContainer: StructuralInorganic
-     damageModifierSet: Metallic
+      damageContainer: StructuralInorganic
+      damageModifierSet: StrongMetallic
     - type: RCDDeconstructable
       cost: 6
       delay: 8
