@@ -28,6 +28,9 @@
       - trigger:
           !type:DamageTrigger
           damage: 500
+        behaviors:
+        - !type:DoActsBehavior
+          acts: ["Destruction"]
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
