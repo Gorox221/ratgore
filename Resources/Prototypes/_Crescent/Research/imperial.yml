@@ -260,7 +260,7 @@
   recipeUnlocks:
   - NemesisLPC
   - JanissaryLPC
-  - VorunaLPC
+  - KhanLPC
   - PerigaleLPC
 
 - type: technology
@@ -302,7 +302,6 @@
   - WeaponLightMachineGunDSMDominion
   - WeaponSniperImperator
   - WeaponShotgunReno
-
 
 - type: technology
   id: ImperialPlasmaMechGuns
@@ -376,6 +375,18 @@
   cost: 12000
   recipeUnlocks:
   - SuzerainLPC
+
+- type: technology
+  id: ImperialRaider
+  name: research-technology-imperial-raider
+  icon:
+    sprite: _Crescent/Objects/Misc/lpcchip.rsi
+    state: icon
+  discipline: Imperial
+  tier: 2
+  cost: 8000
+  recipeUnlocks:
+  - RaiderLPC
 
 - type: technology
   id: DSMCraftComps
