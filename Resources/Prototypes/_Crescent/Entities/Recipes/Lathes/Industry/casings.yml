@@ -1,0 +1,20 @@
+- type: latheRecipe
+  id: SmallCasings
+  result: CasingSmallBox
+  completetime: 5
+  materials:
+    Steel: 50
+
+- type: latheRecipe
+  id: MediumCasings
+  result: CasingMediumBox
+  completetime: 5
+  materials:
+    SmallCasing: 100
+
+- type: latheRecipe
+  id: LargeCasings
+  result: CasingLargeBox
+  completetime: 5
+  materials:
+    MediumCasing: 100

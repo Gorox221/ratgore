@@ -1,0 +1,26 @@
+#20mm
+- type: latheRecipe
+  id: Magazine20mm
+  result: Magazine20mm
+  completetime: 2
+  materials:
+    SmallCasing: 20
+    Blackpowder: 20
+
+#35mm
+- type: latheRecipe
+  id: Magazine35mm
+  result: Magazine35mm
+  completetime: 2
+  materials:
+    SmallCasing: 20
+    Blackpowder: 20
+
+#50mm
+- type: latheRecipe
+  id: Magazine50mm
+  result: Magazine50mm
+  completetime: 2
+  materials:
+    SmallCasing: 20
+    Blackpowder: 20

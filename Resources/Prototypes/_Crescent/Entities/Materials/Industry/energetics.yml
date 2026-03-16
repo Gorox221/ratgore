@@ -1,0 +1,92 @@
+- type: entity
+  parent: MaterialBase
+  id: Charcoal
+  name: charcoal
+  description: A stabilized energetic compound used as propellant in low-yield weapon systems.
+  components:
+  - type: Stack
+    stackType: Charcoal
+    count: 1
+  - type: Sprite
+    sprite: Objects/Misc/reagent_fillings.rsi
+    state: powderpile
+    color: darkgray
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      Carbon: 100
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - RawMaterial
+
+- type: entity
+  id: Charcoal1
+  parent: Charcoal
+  suffix: Single
+  components:
+    - type: Stack
+      count: 1
+
+- type: entity
+  parent: MaterialBase
+  id: Blackpowder
+  name: blackpowder
+  description: A stabilized energetic compound used as propellant in low-yield weapon systems.
+  components:
+  - type: Stack
+    stackType: Blackpowder
+    count: 30
+  - type: Sprite
+    sprite: Objects/Misc/reagent_fillings.rsi
+    state: powderpile
+    color: black
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      Blackpowder: 100
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - Energetics
+
+- type: entity
+  id: Blackpowder1
+  parent: Blackpowder
+  suffix: Single
+  components:
+    - type: Stack
+      count: 1
+
+- type: entity
+  parent: MaterialBase
+  id: OrdnanceCompound
+  name: High-Energy Explosive Compound
+  description: A stabilized energetic compound used as propellant in high-yield weapon systems.
+  components:
+  - type: Stack
+    stackType: OrdnanceCompound
+    count: 30
+  - type: Sprite
+    sprite: Objects/Misc/reagent_fillings.rsi
+    state: powderpile
+    color: purple
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      OrdnanceCompound: 100
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - Energetics
+
+- type: entity
+  id: OrdnanceCompound1
+  parent: OrdnanceCompound
+  suffix: Single
+  components:
+    - type: Stack
+      count: 1

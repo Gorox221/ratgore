@@ -1,0 +1,84 @@
+- type: entity
+  id: BaseCasing
+  parent: BaseItem
+  name: basecasing
+  description: base casing
+  components:
+  - type: Item
+    size: Normal
+  - type: Appearance
+  - type: Tag
+    tags:
+    - Casings
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: FlimsyMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Material
+
+- type: entity
+  id: CasingSmallBox
+  parent: BaseCasing
+  name: infantry grade casing crate
+  description: A standardized crate of small-arms cartridge casings. Designed to support a wide range of infantry calibers, from sidearms to shotguns. Intended for use in automated ammunition assembly systems.
+  suffix: Casings
+  components:
+  - type: Sprite
+    sprite: _Crescent/Objects/Industry
+    layers:
+    - state: infantrybox
+  - type: PhysicalComposition
+    materialComposition:
+      SmallCasing: 100
+
+- type: entity
+  id: CasingMediumBox
+  parent: BaseCasing
+  name: autocannon grade casing crate
+  description: A standardized crate of autocannon cartridge casings. Designed to support a wide range of autocannon calibers, from rotary cannons to low-calibre artillery. Intended for use in automated ammunition assembly systems.
+  suffix: Casings
+  components:
+  - type: Sprite
+    sprite: _Crescent/Objects/Industry
+    layers:
+    - state: autocannonbox
+  - type: PhysicalComposition
+    materialComposition:
+      MediumCasing: 100
+
+- type: entity
+  id: CasingLargeBox
+  parent: BaseCasing
+  name: artillery grade casing crate
+  description: A standardized crate of artillery cartridge casings. Designed to support a wide range of artillery calibers. Intended for use in automated ammunition assembly systems.
+  suffix: Casings
+  components:
+  - type: Sprite
+    sprite: _Crescent/Objects/Industry
+    layers:
+    - state: artillerybox
+  - type: PhysicalComposition
+    materialComposition:
+      LargeCasing: 100
+
+- type: entity
+  id: CasingMissileBox
+  parent: BaseCasing
+  name: artillery grade casing crate
+  description: A standardized crate of missile shell casings. Designed to support a wide range of missile and torpedo calibers, from torpedos to heavy missiles. Intended for use in automated ammunition assembly systems.
+  suffix: Casings
+  components:
+  - type: Sprite
+    sprite: _Crescent/Objects/Industry
+    layers:
+    - state: missilebox
+  - type: PhysicalComposition
+    materialComposition:
+      MissileCasing: 100

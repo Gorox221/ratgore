@@ -1,0 +1,162 @@
+# Everyone
+- type: latheRecipe
+  id: LightRifleMag
+  result: MagazineLightRifleEmpty
+  category: Ammo
+  completetime: 1
+  materials:
+    Plastic: 30
+
+- type: latheRecipe
+  id: LightRifleBox
+  result: MagazineLightRifleBoxEmpty
+  category: Ammo
+  completetime: 1
+  materials:
+    Plastic: 30
+
+- type: latheRecipe
+  id: RifleMag
+  result: MagazineRifleEmpty
+  category: Ammo
+  completetime: 1
+  materials:
+    Plastic: 50
+
+- type: latheRecipe
+  id: RifleDrum
+  result: MagazineRifleDrumEmpty
+  category: Ammo
+  completetime: 1
+  materials:
+    Plastic: 50
+
+- type: latheRecipe
+  id: MagazinePistolSubMachineGunEmpty
+  result: MagazinePistolSubMachineGunEmpty
+  category: Ammo
+  completetime: 1
+  materials:
+    Plastic: 20
+
+- type: latheRecipe
+  id: MagazinePistolSubMachineGunHeavyEmpty
+  result: MagazinePistolSubMachineGunHeavyEmpty
+  category: Ammo
+  completetime: 1
+  materials:
+    Plastic: 20
+
+- type: latheRecipe
+  id: MagazineShotgunEmpty
+  result: MagazineShotgunEmpty
+  category: Ammo
+  completetime: 5
+  materials:
+    Plastic: 50
+
+# .35 Pistol Magazines
+- type: latheRecipe
+  id: MagazinePistolEmpty
+  result: MagazinePistolEmpty
+  category: Ammo
+  completetime: 1
+  materials:
+    Plastic: 25
+
+- type: latheRecipe
+  id: MagazinePistolSubMachineGunTopMountedEmpty
+  result: MagazinePistolSubMachineGunTopMountedEmpty
+  category: Ammo
+  completetime: 5
+  materials:
+    Plastic: 30
+
+- type: latheRecipe
+  id: MagazineMagnumEmpty
+  result: MagazineMagnumEmpty
+  category: Ammo
+  completetime: 5
+  materials:
+    Plastic: 30
+
+- type: latheRecipe
+  id: MagazinePistol6mmSmgEmpty
+  result: MagazinePistol6mmSmgEmpty
+  category: Ammo
+  completetime: 5
+  materials:
+    Plastic: 50
+
+- type: latheRecipe
+  id: BaseMagazine6x24mm
+  result: BaseMagazine6x24mm
+  category: Ammo
+  completetime: 5
+  materials:
+    Plastic: 50
+
+- type: latheRecipe
+  id: MagazineRiflePanEmpty
+  result: MagazineRiflePanEmpty
+  category: Ammo
+  completetime: 5
+  materials:
+    Plastic: 50
+
+- type: latheRecipe
+  id: MagazineHeavyRifleEmpty
+  result: MagazineHeavyRifleEmpty
+  category: Ammo
+  completetime: 5
+  materials:
+    Plastic: 50
+
+- type: latheRecipe
+  id: MagazineHeavyRifleBoxmagEmpty
+  result: MagazineHeavyRifleBoxmagEmpty
+  category: Ammo
+  completetime: 5
+  materials:
+    Plastic: 50
+
+- type: latheRecipe
+  id: MagazineMagnumSubEmpty
+  result: MagazineMagnumSubEmpty
+  category: Ammo
+  completetime: 5
+  materials:
+    Plastic: 50
+
+- type: latheRecipe
+  id: MagazineAntiMaterielEmpty
+  result: MagazineAntiMaterielEmpty
+  category: Ammo
+  completetime: 5
+  materials:
+    Plastic: 50
+
+- type: latheRecipe
+  id: BaseMagazineCaselessRifleEmpty
+  result: BaseMagazineCaselessRifleEmpty
+  category: Ammo
+  completetime: 5
+  materials:
+    Plastic: 50
+
+- type: latheRecipe
+  id: SpeedLoaderMagnumEmpty
+  result: SpeedLoaderMagnumEmpty
+  category: Ammo
+  completetime: 5
+  materials:
+    Plastic: 50
+
+- type: latheRecipe
+  id: MagazineRocketEmpty
+  result: MagazineRocketEmpty
+  category: Ammo
+  completetime: 1
+  materials:
+    Plastic: 20
+

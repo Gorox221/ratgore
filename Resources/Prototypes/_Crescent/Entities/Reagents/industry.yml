@@ -1,0 +1,79 @@
+- type: material
+  id: Carbon
+  name: materials-carbon
+  unit: materials-unit-piece
+  icon: { sprite: Objects/Misc/reagent_fillings.rsi, state: powderpile }
+  color: "#030000e8"
+  price: 0
+
+- type: material
+  id: Blackpowder
+  name: materials-blackpowder
+  unit: materials-unit-piece
+  icon: { sprite: _Crescent/Objects/Industry, state: blackpowder }
+  color: "#030000"
+  price: 0
+
+- type: material
+  id: OrdnanceCompound
+  name: materials-ordnanceCompound
+  unit: materials-unit-piece
+  icon: { sprite: _Crescent/Objects/Industry, state: highexplosive }
+  color: "#ff0080"
+  price: 0
+
+- type: material
+  id: SructuralAlloy
+  name: materials-structuralalloy
+  unit: materials-unit-piece
+  icon: { sprite: _Crescent/Objects/Materials/ingots.rsi, state: structural }
+  color: "#030000"
+  price: 0
+
+- type: material
+  id: BallisticAlloy
+  name: materials-ballisticalloy
+  unit: materials-unit-piece
+  icon: { sprite: _Crescent/Objects/Materials/ingots.rsi, state: ferric }
+  color: "#030000"
+  price: 0
+
+- type: material
+  id: OrdnanceAlloy
+  name: materials-ordnancealloy
+  unit: materials-unit-piece
+  icon: { sprite: Objects/Misc/reagent_fillings.rsi, state: powderpile }
+  color: "#030000"
+  price: 0
+
+- type: material
+  id: SmallCasing
+  name: materials-smallcasing
+  unit: materials-unit-piece
+  icon: { sprite: _Crescent/Objects/Industry, state: infantrybox }
+  color: "#ffffff"
+  price: 0
+
+- type: material
+  id: MediumCasing
+  name: materials-mediumcasing
+  unit: materials-unit-piece
+  icon: { sprite: _Crescent/Objects/Industry, state: autocannonbox }
+  color: "#ffffff"
+  price: 0
+
+- type: material
+  id: LargeCasing
+  name: materials-largecasing
+  unit: materials-unit-piece
+  icon: { sprite: _Crescent/Objects/Industry, state: artillerybox }
+  color: "#ffffff"
+  price: 0
+
+- type: material
+  id: MissileCasing
+  name: materials-missilecasing
+  unit: materials-unit-piece
+  icon: { sprite: _Crescent/Objects/Industry, state: missilebox }
+  color: "#ffffff"
+  price: 0

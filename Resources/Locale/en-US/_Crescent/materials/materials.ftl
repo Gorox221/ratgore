@@ -39,3 +39,16 @@ materials-plastitaniumfibrealloy = plastitanium fibre alloy
 
 materials-unit-canister = units
 materials-unit-liter = liters
+
+# Industry
+materials-carbon = carbon
+materials-blackpowder = blackpowder
+materials-structuralalloy = structural alloy
+materials-ballisticalloy = ballistics alloy
+materials-ordnancealloy = ordnance alloy
+materials-ordnanceCompound = high-energy explosive compound
+materials-smallcasing = small casings
+materials-mediumcasing = medium casings
+materials-largecasing = large casings
+materials-missilecasing = missile casings
+materials-iron = pig iron

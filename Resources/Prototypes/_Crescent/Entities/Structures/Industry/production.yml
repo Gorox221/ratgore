@@ -1,0 +1,221 @@
+- type: entity
+  parent: BaseLathe
+  id: AdditiveWorkshop
+  name: Matter Printer
+  description: An industrial additive manufacturing unit capable of printing magazines, tools, and other small equipment.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Structures/Industry/additiveworkshop.rsi
+    layers:
+    - state: printerinactive
+      map: ["enum.LatheVisualLayers.IsRunning"]
+  - type: MaterialStorageMagnetPickup
+    magnetEnabled: True
+  - type: MaterialStorage
+    dropOnDeconstruct: true
+    ignoreColor: true
+    canEjectStoredMaterials: true
+    whitelist:
+      tags:
+      - Ingot
+      - RawMaterial
+      - Sheet
+  - type: Lathe
+    idleState: printerinactive
+    runningState: printeractive
+    staticRecipes:
+    - LightRifleMag
+    - LightRifleBox
+    - RifleMag
+    - RifleDrum
+    - MagazinePistolSubMachineGunEmpty
+    - MagazinePistolSubMachineGunHeavyEmpty
+    - MagazineShotgunEmpty
+    - MagazinePistolEmpty
+    - MagazinePistolSubMachineGunTopMountedEmpty
+    - MagazineMagnumEmpty
+    - MagazinePistol6mmSmgEmpty
+    - MagazineRiflePanEmpty
+    - MagazineHeavyRifleEmpty
+    - MagazineHeavyRifleBoxmagEmpty
+    - MagazineMagnumSubEmpty
+    - MagazineAntiMaterielEmpty
+    - BaseMagazineCaselessRifleEmpty
+    - SpeedLoaderMagnumEmpty
+    - MagazineRocketEmpty
+
+- type: entity
+  parent: BaseLathe
+  id: EnergeticsMill
+  name: Powder ball mill
+  description: A heavy rotating drum used to grind and incorporate energetic materials into usable propellant.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Structures/Industry/energeticsmill.rsi
+    layers:
+    - state: energeticmillinactive
+      map: ["enum.LatheVisualLayers.IsRunning"]
+  - type: MaterialStorageMagnetPickup
+    magnetEnabled: True
+  - type: MaterialStorage
+    dropOnDeconstruct: false
+    ignoreColor: true
+    canEjectStoredMaterials: true
+    whitelist:
+      tags:
+      - RawMaterial
+      - Sheet
+  - type: Lathe
+    idleState: energeticmillinactive
+    runningState: energeticmillactive
+    staticRecipes:
+    - BlackpowderCraft
+    - OrdnanceCompoundCraft
+
+- type: entity
+  parent: BaseLathe
+  id: AlloySmelter
+  name: Industrial Induction Furnace
+  description: an electrically powered machine that uses electromagnetic induction to generate intense, rapid heat directly within conductive materials, melting them without direct contact.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Structures/Industry/alloyfurnace.rsi
+    layers:
+    - state: alloyfurnaceinactive
+      map: ["enum.LatheVisualLayers.IsRunning"]
+  - type: MaterialStorageMagnetPickup
+    magnetEnabled: True
+  - type: MaterialStorage
+    dropOnDeconstruct: true
+    ignoreColor: true
+    canEjectStoredMaterials: true
+    whitelist:
+      tags:
+      - Ingot
+      - RawMaterial
+      - Sheet
+      - Ore
+  - type: Lathe
+    idleState: alloyfurnaceinactive
+    runningState: alloyfurnaceactive
+    staticRecipes:
+    - AlloyBallistics
+    - AlloyOrdnance
+    - AlloyStructural
+    - AlloySteel
+
+- type: entity
+  parent: BaseLathe
+  id: CasingPress
+  name: Industrial Casing Press
+  description:
+  components:
+  - type: Sprite
+    sprite: _Crescent/Structures/Industry/casingpress.rsi
+    layers:
+    - state: casingpressinactive
+      map: ["enum.LatheVisualLayers.IsRunning"]
+  - type: MaterialStorageMagnetPickup
+    magnetEnabled: True
+  - type: MaterialStorage
+    dropOnDeconstruct: true
+    ignoreColor: true
+    canEjectStoredMaterials: true
+    whitelist:
+      tags:
+      - Ingot
+      - RawMaterial
+      - Sheet
+      - Casings
+  - type: Lathe
+    idleState: casingpressinactive
+    runningState: casingpressactive
+    staticRecipes:
+    - SmallCasings
+    - MediumCasings
+
+- type: entity
+  parent: BaseLathe
+  id: HeavyCasingPress
+  name: Heavy Industrial Casing Press
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Crescent/Structures/Industry/heavypress.rsi
+    layers:
+    - state: heavypressinactive
+      map: ["enum.LatheVisualLayers.IsRunning"]
+  - type: MaterialStorageMagnetPickup
+    magnetEnabled: True
+  - type: MaterialStorage
+    dropOnDeconstruct: true
+    ignoreColor: true
+    canEjectStoredMaterials: true
+    whitelist:
+      tags:
+      - Ingot
+      - RawMaterial
+      - Sheet
+  - type: Lathe
+    idleState: heavypressinactive
+    runningState: heavypressactive
+    staticRecipes:
+    - LargeCasings
+
+- type: entity
+  parent: BaseLathe
+  id: AmmoAssemblyMachine
+  name: ammo assembly machine
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Crescent/Structures/Industry/ammosmall.rsi
+    layers:
+    - state: ammosmallinactive
+      map: ["enum.LatheVisualLayers.IsRunning"]
+  - type: MaterialStorageMagnetPickup
+    magnetEnabled: True
+  - type: MaterialStorage
+    dropOnDeconstruct: true
+    ignoreColor: true
+    canEjectStoredMaterials: true
+    whitelist:
+      tags:
+      - Ingot
+      - RawMaterial
+      - Sheet
+      - Casings
+  - type: Lathe
+    idleState: ammosmallinactive
+    runningState: ammosmallactive
+    staticRecipes:
+    - MagazineBoxLightRifle
+
+- type: entity
+  parent: BaseLathe
+  id: ArtilleryAssemblyMachine
+  name: artillery assembly machine
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Crescent/Structures/Industry/ammolarge.rsi
+    layers:
+    - state: ammolargeinactive
+      map: ["enum.LatheVisualLayers.IsRunning"]
+  - type: MaterialStorageMagnetPickup
+    magnetEnabled: True
+  - type: MaterialStorage
+    dropOnDeconstruct: true
+    ignoreColor: true
+    canEjectStoredMaterials: true
+    whitelist:
+      tags:
+      - Ingot
+      - RawMaterial
+      - Sheet
+      - Casings
+  - type: Lathe
+    idleState: ammolargeinactive
+    runningState: ammolargeactive
+    staticRecipes:
+    - SmallCasings

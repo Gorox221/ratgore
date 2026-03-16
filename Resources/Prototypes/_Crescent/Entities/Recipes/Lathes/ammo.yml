@@ -48,13 +48,6 @@
     Plasma: 300
 
 - type: latheRecipe
-  id: DrumMagazineShotgunEmpty
-  result: DrumMagazineShotgunEmpty
-  completetime: 1
-  materials:
-    Steel: 100
-
-- type: latheRecipe
   id: DrumMagazineShotgunBuck
   result: DrumMagazineShotgunBuck
   completetime: 1

@@ -1,0 +1,124 @@
+- type: entity
+  parent: IngotBase
+  id: BallisticAlloy
+  name: Ferric Composite Alloy
+  description: A carbon-bound iron alloy optimized for mass production.
+  suffix: 30
+  components:
+  - type: Stack
+    stackType: BallisticAlloy
+    baseLayer: base
+    layerStates:
+    - ferric
+    - ferric2
+    - ferric3
+  - type: Tag
+    tags:
+    - CraftMaterials
+  - type: Sprite
+    sprite: _Crescent/Objects/Materials/ingots.rsi
+    state: ferric3
+    layers:
+    - state: ferric3
+      map: ["base"]
+  - type: Item
+    heldPrefix: ferric
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      BallisticAlloy: 100
+  - type: Appearance
+
+- type: entity
+  id: BallisticAlloy1
+  parent: BallisticAlloy
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1
+  - type: Sprite
+    state: ferric
+
+- type: entity
+  parent: OreBase
+  id: StructuralAlloy
+  name: Tungsten-Reinforced Structural Alloy
+  description: A sulfur-treated, tungsten-reinforced alloy designed for high-stress hulls and industrial superstructures.
+  suffix: 30
+  components:
+  - type: Stack
+    stackType: StructuralAlloy
+    baseLayer: base
+    layerStates:
+    - structural
+    - structural2
+    - structural3
+  - type: Tag
+    tags:
+    - CraftMaterials
+  - type: Sprite
+    sprite: _Crescent/Objects/Materials/ingots.rsi
+    state: structural3
+    layers:
+    - state: structural3
+      map: ["base"]
+  - type: Item
+    sprite: _Crescent/Objects/Materials/ingots.rsi
+    size: Normal
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      StructuralAlloy: 100
+  - type: Appearance
+
+- type: entity
+  id: StructuralAlloy1
+  parent: StructuralAlloy
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1
+  - type: Sprite
+    state: Structural
+
+- type: entity
+  parent: OreBase
+  id: OrdnanceAlloy
+  name: Plasma-Stabilized Ordnance Alloy
+  description: A sulfur-treated, tungsten-reinforced alloy designed for high-stress hulls and industrial superstructures.
+  suffix: 30
+  components:
+  - type: Stack
+    stackType: OrdnanceAlloy
+    baseLayer: base
+    layerStates:
+    - ordnance
+    - ordnance2
+    - ordnance3
+  - type: Tag
+    tags:
+    - CraftMaterials
+  - type: Sprite
+    sprite: _Crescent/Objects/Materials/ingots.rsi
+    state: ordnance3
+    layers:
+    - state: ordnance3
+      map: ["base"]
+  - type: Item
+    sprite: _Crescent/Objects/Materials/ingots.rsi
+    size: Normal
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      OrdnanceAlloy: 100
+  - type: Appearance
+
+- type: entity
+  id: OrdnanceAlloy1
+  parent: OrdnanceAlloy
+  suffix: Single
+  components:
+    - type: Stack
+      count: 1
+    - type: Sprite
+      state: Ordnance

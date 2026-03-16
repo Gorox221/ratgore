@@ -1,0 +1,80 @@
+# 5.56
+- type: latheRecipe
+  id: MagazineBoxLightRifle
+  result: MagazineBoxLightRifle
+  completetime: 2
+  materials:
+    SmallCasing: 20
+    Blackpowder: 20
+
+# 7.62
+- type: latheRecipe
+  id: MagazineBoxRifleBig
+  result: MagazineBoxRifleBig
+  completetime: 2
+  materials:
+    SmallCasing: 20
+    Blackpowder: 20
+
+# 12.7x99mm
+- type: latheRecipe
+  id: MagazineBoxHeavyRifle
+  result: MagazineBoxHeavyRifle
+  completetime: 2
+  materials:
+    SmallCasing: 20
+    Blackpowder: 20
+
+# 15.2x169mm
+- type: latheRecipe
+  id: MagazineBoxAntiMaterialBig
+  result: MagazineBoxAntiMaterialBig
+  completetime: 2
+  materials:
+    SmallCasing: 20
+    Blackpowder: 20
+
+# 9x19mm
+- type: latheRecipe
+  id: MagazineBoxPistol
+  result: MagazineBoxPistol
+  completetime: 2
+  materials:
+    SmallCasing: 20
+    Blackpowder: 20
+
+# 11mm
+- type: latheRecipe
+  id: MagazineBoxHeavyPistol
+  result: MagazineBoxPistol
+  completetime: 2
+  materials:
+    SmallCasing: 20
+    Blackpowder: 20
+
+# .327
+- type: latheRecipe
+  id: MagazineBoxMagnum
+  result: MagazineBoxMagnum
+  completetime: 2
+  materials:
+    SmallCasing: 20
+    Blackpowder: 20
+
+# 12g
+- type: latheRecipe
+  id: BoxLethalshot
+  result: BoxLethalshot
+  completetime: 2
+  materials:
+    SmallCasing: 20
+    Blackpowder: 20
+
+# 4g
+- type: latheRecipe
+  id: BoxLethalshot4g
+  result: BoxLethalshot4g
+  completetime: 2
+  materials:
+    SmallCasing: 20
+    Blackpowder: 20

@@ -1,0 +1,42 @@
+- type: stack
+  id: Charcoal
+  name: charcoal
+  icon: { sprite: Objects/Misc/reagent_fillings.rsi, state: powderpile }
+  spawn: Charcoal1
+  maxCount: 50
+
+- type: stack
+  id: Blackpowder
+  name: blackpowder
+  icon: { sprite: Objects/Misc/reagent_fillings.rsi, state: powderpile }
+  spawn: Blackpowder1
+  maxCount: 50
+
+- type: stack
+  id: OrdnanceCompound
+  name: ordnance compound
+  icon: { sprite: Objects/Misc/reagent_fillings.rsi, state: powderpile }
+  spawn: OrdnanceCompound1
+  maxCount: 50
+
+- type: stack
+  id: BallisticAlloy
+  name: ballistic alloy
+  icon: { sprite: _Crescent/Objects/Materials/ingots.rsi, state: ferric }
+  spawn: BallisticAlloy1
+  maxCount: 50
+
+- type: stack
+  id: StructuralAlloy
+  name: structural alloy
+  icon: { sprite: "_Crescent/Objects/Materials/ingots.rsi", state: structural }
+  spawn: StructuralAlloy1
+  maxCount: 50
+
+- type: stack
+  id: OrdnanceAlloy
+  name: ordnance alloy
+  icon: { sprite: _Crescent/Objects/Materials/ingots.rsi, state: ordnance }
+  spawn: OrdnanceAlloy1
+  maxCount: 50
+
