@@ -8,7 +8,7 @@
 
 - type: material
   id: Gunpowder
-  name: materials-gunpowder
+  name: materials-Gunpowder
   unit: materials-unit-piece
   icon: { sprite: _Crescent/Objects/Industry.rsi, state: blackpowder }
   color: "#030000"
