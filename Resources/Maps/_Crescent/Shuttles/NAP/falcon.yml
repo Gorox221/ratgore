@@ -641,7 +641,7 @@ entities:
       parent: 1
     - type: NamedModules
       buttonNames:
-      - Fire "Arbalest" 95mm Missile
+      - Fire "Shortbow" 45mm Missile
       - Empty Module
       - Empty Module
       - Empty Module
