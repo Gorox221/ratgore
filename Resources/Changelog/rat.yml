@@ -442,5 +442,12 @@ Entries:
     id: 59
     time: '2026-03-23T12:14:47.0000000+00:00'
     url: https://github.com/ss14-art/ratgore/pull/65
+  - author: freycyik
+    changes:
+      - type: Tweak
+        message: Увеличена цена киборгов-саботёров, уменьшено их ХП и количество пуль.
+    id: 60
+    time: '2026-03-24T11:35:42.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/75
 Name: Rat
 Order: -1
