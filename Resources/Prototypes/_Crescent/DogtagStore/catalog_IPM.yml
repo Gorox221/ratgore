@@ -161,7 +161,7 @@
 - type: listing
   id: StoreListingIPMCyberneticsSandevistan
   name: IPM TT-48 Sandevistan
-  description: Illegal cyberware that replaces the user's heart and allows them to greatly increase their speed for the cost of the endurance.
+  description: Illegal cyberware that allows them to greatly increase their speed for the cost of the endurance.
   icon: { sprite: /Textures/_Goobstation/Objects/Misc/sandevistan.rsi, state: icon }
   productEntity: OrganHeartSandevistan
   cost:
