@@ -91,7 +91,7 @@
     maxDurability: 60
     walkSpeedModifier: 0.9
     sprintSpeedModifier: 0.9
-    staminaDamageModifier: 0.7
+    staminaDamageMultiplier: 0.7
     damageMultipliers:
       Piercing: 0.7
       Blunt: 0.6
@@ -131,8 +131,8 @@
     - 0,0,2,2
   - type: ArmorPlateItem
     maxDurability: 140
-    walkSpeedMultiplier: 1
-    sprintSpeedmultiplier: 1
+    walkSpeedModifier: 1
+    sprintSpeedModifier: 1
     staminaDamageMultiplier: 0.4
     damageMultipliers:
       Piercing: 2
@@ -174,8 +174,8 @@
     - 0,0,2,2
   - type: ArmorPlateItem
     maxDurability: 150
-    walkSpeedMultiplier: 0.8
-    sprintSpeedmultiplier: 0.8
+    walkSpeedModifier: 0.8
+    sprintSpeedModifier: 0.8
     staminaDamageMultiplier: 0.8
     damageMultipliers:
       Piercing: 0.9
@@ -216,8 +216,8 @@
     - 0,0,3,3
   - type: ArmorPlateItem
     maxDurability: 150
-    walkSpeedMultiplier: 1
-    sprintSpeedmultiplier: 1
+    walkSpeedModifier: 1
+    sprintSpeedModifier: 1
     staminaDamageMultiplier: 1
     damageMultipliers:
       Piercing: 1.5
@@ -259,8 +259,8 @@
     - 0,0,3,3
   - type: ArmorPlateItem
     maxDurability: 100
-    walkSpeedMultiplier: 0.7
-    sprintSpeedmultiplier: 0.7
+    walkSpeedModifier: 0.7
+    sprintSpeedModifier: 0.7
     staminaDamageMultiplier: 0.7
     damageMultipliers:
       Piercing: 0.7
@@ -301,8 +301,8 @@
     - 0,0,3,3
   - type: ArmorPlateItem
     maxDurability: 200
-    walkSpeedMultiplier: 1
-    sprintSpeedmultiplier: 1
+    walkSpeedModifier: 1
+    sprintSpeedModifier: 1
     staminaDamageMultiplier: 0.8
     absorptionRatios:
       Piercing: 0.1
@@ -341,8 +341,8 @@
     - 0,0,3,3
   - type: ArmorPlateItem
     maxDurability: 250
-    walkSpeedMultiplier: 0.9
-    sprintSpeedmultiplier: 0.9
+    walkSpeedModifier: 0.9
+    sprintSpeedModifier: 0.9
     staminaDamageMultiplier: 0.4
     damageMultipliers:
       Piercing: 3
@@ -384,8 +384,8 @@
     - 0,0,3,3
   - type: ArmorPlateItem
     maxDurability: 300
-    walkSpeedMultiplier: 0.7
-    sprintSpeedmultiplier: 0.7
+    walkSpeedModifier: 0.7
+    sprintSpeedModifier: 0.7
     staminaDamageMultiplier: 0.7
     damageMultipliers:
       Piercing: 0.9
@@ -426,8 +426,8 @@
     - 0,0,3,3
   - type: ArmorPlateItem
     maxDurability: 350
-    walkSpeedMultiplier: 1
-    sprintSpeedmultiplier: 1
+    walkSpeedModifier: 1
+    sprintSpeedModifier: 1
     staminaDamageMultiplier: 0.6
     damageMultipliers:
       Piercing: 2
