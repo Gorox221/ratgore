@@ -309,7 +309,7 @@
   icon: { sprite: /Textures/Clothing/Back/Duffels/syndicate.rsi, state: icon }
   productEntity: ClothingBackpackDuffelSyndicateBreachingChargetBundle
   cost:
-    PlunderGSC: 6
+    PlunderGSC: 1
   categories:
   - StoreCategoryGSCExplosives
 
