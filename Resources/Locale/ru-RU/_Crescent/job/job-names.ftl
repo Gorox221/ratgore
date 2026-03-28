@@ -91,9 +91,9 @@ job-name-marshal = Колониальный маршал
 
 job-name-prophet = Пророк Арабет
 job-name-acolytetap = Преданный Арабет
-job-name-techminer = Техношахтёр Туккера
-job-name-tinkerer = Машинист Туккера
-job-name-hangartech = Техник ангара Туккера
+job-name-techminer = Техношахтёр Таккер
+job-name-tinkerer = Машинист Таккер
+job-name-hangartech = Техник ангара Таккер
 job-name-beltrunner = Поясник Издари
 job-name-draugr = Драугр Аль'Сеик
 job-name-servile = Слуга Аль'Сеик
