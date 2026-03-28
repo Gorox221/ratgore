@@ -1,8 +1,11 @@
+using Content.Server.Shuttles.Systems;
 using Content.Server._Rat.Shuttles.Systems;
+using Content.Shared._Rat.Shuttles.Components;
+using Robust.Shared.GameStates;
 
 namespace Content.Server._Rat.Shuttles.Components;
 
-[RegisterComponent, Access(typeof(MassCloakConsoleSystem))]
+[RegisterComponent, Access(typeof(MassCloakConsoleSystem), typeof(ShuttleSystem))]
 public sealed partial class MassCloakConsoleComponent : Component
 {
     [ViewVariables(VVAccess.ReadWrite), DataField("massCloakEnabled")]
@@ -13,6 +16,12 @@ public sealed partial class MassCloakConsoleComponent : Component
 
     [ViewVariables(VVAccess.ReadWrite)]
     public EntityUid? originalGrid = null;
+
+    /// <summary>
+    /// List of grids currently being cloaked by this console
+    /// </summary>
+    [ViewVariables]
+    public HashSet<EntityUid> CloakedGrids = new();
 
     public const float MassCloakMinRange = 20f;
     public const float MassCloakMaxRange = 500f;

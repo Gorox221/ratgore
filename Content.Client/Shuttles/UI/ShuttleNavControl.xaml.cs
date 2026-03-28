@@ -145,7 +145,7 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
             var gridBody = bodyQuery.GetComponent(gUid);
             EntManager.TryGetComponent<IFFComponent>(gUid, out var iff);
 
-            if (!ShuttlesSys.CanDraw(gUid, gridBody, iff))
+            if (!ShuttlesSys.CanDraw(gUid, gridBody, iff, selfGrid))
                 return;
 
             var labelName = ShuttlesSys.GetIFFLabel(gUid, self: false, iff);
@@ -544,7 +544,7 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
             var gridBody = bodyQuery.GetComponent(gUid);
             EntManager.TryGetComponent<IFFComponent>(gUid, out var iff);
 
-            if (!_shuttles.CanDraw(gUid, gridBody, iff))
+            if (ourGridId.HasValue && !_shuttles.CanDraw(gUid, gridBody, iff, ourGridId.Value))
                 continue;
 
             var gridMatrix = _transform.GetWorldMatrix(gUid);
@@ -658,7 +658,7 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
             var gridBody = bodyQuery.GetComponent(gUid);
             EntManager.TryGetComponent<IFFComponent>(gUid, out var iff);
 
-            if (!_shuttles.CanDraw(gUid, gridBody, iff))
+            if (!_shuttles.CanDraw(gUid, gridBody, iff, selfGrid))
                 continue;
 
             if (IFFLineFilter != null && !IFFLineFilter(gUid, grid.Comp, iff))
@@ -931,7 +931,7 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
         var mapPos = _transform.ToMapCoordinates(_coordinates.Value);
         var (_, ourEntRot, ourEntMatrix) = _transform.GetWorldPositionRotationMatrix(_coordinates.Value.EntityId);
         var rot = ourEntRot + _rotation.Value;
-        
+
         if (keepWorldAligned)
         {
             ourEntRot = Angle.Zero;
@@ -946,14 +946,14 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
 
         // Центр карты (0,0) в мировых координатах
         var mapCenterWorld = Vector2.Zero;
-        
+
         // Преобразуем центр карты через ту же матрицу, что и другие объекты
         var mapCenterUI = Vector2.Transform(mapCenterWorld, ourWorldMatrixInvert);
         mapCenterUI.Y = -mapCenterUI.Y; // Инвертируем Y для UI
-        
+
         // Масштабируем для отображения
         var uiCenter = ScalePosition(mapCenterUI);
-        
+
         // Рисуем зоны с фиксированным центром в координатах карты (0,0)
         handle.DrawCircle(uiCenter, 650 * MinimapScale, new Color(255, 0, 0, 50), false);
         handle.DrawCircle(uiCenter, 3950 * MinimapScale, new Color(0, 255, 0, 50), false);

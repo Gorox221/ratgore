@@ -19,6 +19,7 @@ using Content.Shared.Salvage;
 using Content.Shared.Shuttles.Components;
 using Content.Shared.Shuttles.Systems;
 using Content.Shared.Throwing;
+using Content.Shared._Rat.Shuttles.Components;
 using JetBrains.Annotations;
 using Robust.Server.GameObjects;
 using Robust.Server.GameStates;
@@ -164,23 +165,29 @@ public sealed partial class ShuttleSystem : SharedShuttleSystem
 
     private void UpdateMassCloakFields()
     {
-        var activeFields = new List<(TransformComponent Xform, MassCloakConsoleComponent Comp)>();
+        var activeFields = new List<(EntityUid ConsoleUid, TransformComponent Xform, MassCloakConsoleComponent Comp)>();
         var consoleQuery = EntityQueryEnumerator<MassCloakConsoleComponent, TransformComponent>();
 
-        while (consoleQuery.MoveNext(out _, out var consoleComp, out var consoleXform))
+        while (consoleQuery.MoveNext(out var consoleUid, out var consoleComp, out var consoleXform))
         {
             if (!consoleComp.MassCloakEnabled || consoleXform.GridUid is null)
                 continue;
-            activeFields.Add((consoleXform, consoleComp));
+            activeFields.Add((consoleUid, consoleXform, consoleComp));
         }
 
-        var toCloak = new HashSet<EntityUid>();
+        // Clear old cloak tracking
+        foreach (var activeField in activeFields)
+        {
+            activeField.Comp.CloakedGrids.Clear();
+        }
+
+        var toCloak = new Dictionary<EntityUid, EntityUid>(); // gridUid -> consoleUid
         if (activeFields.Count > 0)
         {
             var gridsQuery = EntityQueryEnumerator<MapGridComponent, TransformComponent>();
             while (gridsQuery.MoveNext(out var gridUid, out _, out var gridXform))
             {
-                foreach (var (fieldXform, fieldComp) in activeFields)
+                foreach (var (consoleUid, fieldXform, fieldComp) in activeFields)
                 {
                     if (gridXform.MapID != fieldXform.MapID)
                         continue;
@@ -188,7 +195,12 @@ public sealed partial class ShuttleSystem : SharedShuttleSystem
                     var dist = (gridXform.WorldPosition - fieldXform.WorldPosition).Length();
                     if (dist <= fieldComp.MassCloakRange)
                     {
-                        toCloak.Add(gridUid);
+                        // Track this cloak
+                        if (!toCloak.ContainsKey(gridUid))
+                        {
+                            toCloak[gridUid] = consoleUid;
+                            fieldComp.CloakedGrids.Add(gridUid);
+                        }
                         break;
                     }
                 }
@@ -205,9 +217,10 @@ public sealed partial class ShuttleSystem : SharedShuttleSystem
         // Remove mass cloaking from grids that are no longer in range
         foreach (var gridUid in existList)
         {
-            if (!toCloak.Contains(gridUid))
+            if (!toCloak.ContainsKey(gridUid))
             {
                 RemComp<MassCloakComponent>(gridUid);
+                RemComp<MassCloakedByComponent>(gridUid);
                 // Also clear the IFF hide flag
                 if (TryComp(gridUid, out IFFComponent? iff))
                 {
@@ -218,9 +231,14 @@ public sealed partial class ShuttleSystem : SharedShuttleSystem
         }
 
         // Add mass cloaking to grids in range
-        foreach (var gridUid in toCloak)
+        foreach (var (gridUid, consoleUid) in toCloak)
         {
             EnsureComp<MassCloakComponent>(gridUid);
+            
+            // Track which console is cloaking this grid
+            var cloakedBy = EnsureComp<MassCloakedByComponent>(gridUid);
+            cloakedBy.CloakingConsoleUid = consoleUid;
+            
             // Also set the IFF hide flag (create IFF component if needed)
             if (!TryComp(gridUid, out IFFComponent? iff))
             {

@@ -206,10 +206,10 @@ public sealed partial class ShuttleMapControl : BaseShuttleControl
             return;
 
         var matty = Matrix3Helpers.CreateInverseTransform(Offset, Angle.Zero);
-        
+
         // Центр мира (0,0) на текущей карте
         var worldCenter = new MapCoordinates(Vector2.Zero, ViewingMap);
-        
+
         // Преобразуем центр мира в экранные координаты
         var centerRelativePos = Vector2.Transform(worldCenter.Position, matty);
         centerRelativePos = centerRelativePos with { Y = -centerRelativePos.Y };
@@ -222,7 +222,7 @@ public sealed partial class ShuttleMapControl : BaseShuttleControl
         // Рисуем зелёные зоны (3950 и 4350 units)
         var greenZoneRadius1 = 3950f * MinimapScale;
         var greenZoneRadius2 = 4350f * MinimapScale;
-        
+
         handle.DrawCircle(centerUiPos, greenZoneRadius1, new Color(0, 255, 0, 50), false);
         handle.DrawCircle(centerUiPos, greenZoneRadius2, new Color(0, 255, 0, 50), false);
     }
