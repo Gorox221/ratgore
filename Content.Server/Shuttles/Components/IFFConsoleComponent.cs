@@ -40,13 +40,5 @@ public sealed partial class IFFConsoleComponent : Component
 
     public bool active = false;
 
-    [ViewVariables(VVAccess.ReadWrite), DataField("massCloakEnabled")]
-    public bool MassCloakEnabled = false;
-
-    [ViewVariables(VVAccess.ReadWrite), DataField("massCloakRange")]
-    public float MassCloakRange = 20f;
-
-    public const float MassCloakMinRange = 20f;
-    public const float MassCloakMaxRange = 500f;
     // end
 }

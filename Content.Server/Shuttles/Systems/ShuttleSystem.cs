@@ -234,11 +234,11 @@ public sealed partial class ShuttleSystem : SharedShuttleSystem
         foreach (var (gridUid, consoleUid) in toCloak)
         {
             EnsureComp<MassCloakComponent>(gridUid);
-            
+
             // Track which console is cloaking this grid
             var cloakedBy = EnsureComp<MassCloakedByComponent>(gridUid);
             cloakedBy.CloakingConsoleUid = consoleUid;
-            
+
             // Also set the IFF hide flag (create IFF component if needed)
             if (!TryComp(gridUid, out IFFComponent? iff))
             {
