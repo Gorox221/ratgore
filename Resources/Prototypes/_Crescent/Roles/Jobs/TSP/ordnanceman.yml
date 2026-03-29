@@ -22,7 +22,7 @@
   alwaysUseSpawner: true
   requireAdminNotify: false
   icon: "JobIconMinuteman"
-  supervisors: You answer to your Colonial Marshal , Deputy Marshal and Watchmaster.
+  supervisors: job-supervisors-cmm-sergeant
   canBeAntag: false
   requirements:
     - !type:CharacterOverallTimeRequirement

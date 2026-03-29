@@ -18,7 +18,7 @@
   alwaysUseSpawner: true
   requireAdminNotify: false
   icon: "JobIconMarshal"
-  supervisors: You answer to your heart's contempt, whether it be protecting the sector's civilians or aiding criminal organizations.
+  supervisors: job-supervisors-cmm-marshal
   canBeAntag: false
   requirements:
     - !type:CharacterWhitelistRequirement
