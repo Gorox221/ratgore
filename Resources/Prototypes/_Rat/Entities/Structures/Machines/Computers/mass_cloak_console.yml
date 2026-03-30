@@ -1,5 +1,5 @@
 - type: entity
-  parent: [BaseComputerAiAccess, BaseStructureDisableToolUse]
+  parent: [BaseComputerAiAccess, BaseStructureDisableToolUse, BaseStructureUnanchorable]
   id: ComputerMassCloak
   name: mass cloak console
   description: Allows you to control mass cloaking fields around this vessel.
