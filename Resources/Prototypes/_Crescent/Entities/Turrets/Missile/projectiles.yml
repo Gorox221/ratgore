@@ -674,7 +674,7 @@
     visualType: SquareReticle
     color: Red
   - type: HeatSeeking
-    rotationSpeed: 30
+    rotationSpeed: 8
     acceleration: 10
     topSpeed: 60
     fieldOfView: 25
