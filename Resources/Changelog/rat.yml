@@ -476,5 +476,44 @@ Entries:
     id: 63
     time: '2026-03-24T12:28:59.0000000+00:00'
     url: https://github.com/ss14-art/ratgore/pull/67
+  - author: SupernoobTheN1
+    changes:
+      - type: Tweak
+        message: Теперь вы можете высыпать руду из магнита для руды и ящика для руды.
+    id: 64
+    time: '2026-03-25T11:42:29.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/77
+  - author: ReWAFFlution
+    changes:
+      - type: Add
+        message: Добавлен фильтр сообщений.
+    id: 65
+    time: '2026-03-26T12:27:54.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/79
+  - author: Gorox221
+    changes:
+      - type: Add
+        message: 'Добавлены два новых боевых импланта с активными способностями в вендомат интердайна: ИПМ TT-48 Сандевистан и ИПМ TT-98 Сердце берсерка'
+    id: 66
+    time: '2026-03-26T12:28:59.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/78
+  - author: freycyik
+    changes:
+      - type: Add
+        message: Добавлены вендоры из РМС для мажор фракций. Там можно взять базовое снаряжение
+      - type: Tweak
+        message: Горлакс теперь не может купить вещмешок С4, а лишь вещмешок прорывных зарядов
+    id: 67
+    time: '2026-03-27T12:31:45.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/84
+  - author: freycyik
+    changes:
+      - type: Add
+        message: Добавлено клинки-богомолы Интердайну.
+      - type: Tweak
+        message: Баффнуты импланты у Интердайна. Имплант на регенерацию - больше регенерирует и так далее
+    id: 68
+    time: '2026-03-29T12:14:20.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/91
 Name: Rat
 Order: -1
