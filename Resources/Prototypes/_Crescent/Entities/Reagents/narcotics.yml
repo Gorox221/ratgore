@@ -385,7 +385,7 @@
 
 - type: reagent
   id: ExileMinus
-  name: reagent-name-exilemunus
+  name: reagent-name-exileminus
   group: Narcotics
   desc: reagent-desc-exileminus
   physicalDesc: reagent-physical-desc-opaque
