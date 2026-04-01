@@ -86,7 +86,7 @@
 
 - type: listing
   id: StoreListingSRMToolbox
-  name: Украденый ящик инструментов
+  name: Украденный ящик инструментов
   description: Ящик с инструментами, украденный у какого-то бедолаги, только что покинувшего Фрипорт. Вряд ли он ему ещё понадобится. Некоторые из них приходят комплектами.
   icon: { sprite: Objects/Tools/Toolboxes/toolbox_syn.rsi, state: icon }
   productEntity: CrateSRMToolbox
@@ -134,7 +134,7 @@
 
 - type: listing
   id: StoreListingSRMCompactDefibrillator
-  name: Компактный дефибрилятор
+  name: Компактный дефибриллятор
   description: Компактный дефибриллятор, который можно пристегнуть к поясу для удобства использования в экстренных ситуациях. Некоторые из них поставляются в комплекте.
   icon: { sprite: Objects/Specific/Medical/defibsmall.rsi, state: icon }
   productEntity: CrateSRMDefibrillator

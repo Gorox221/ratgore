@@ -72,7 +72,7 @@
 - type: listing
   id: StoreListingSRMLauncher
   name: Украденная поставка SHI LAM-17 84mm
-  description: Одноразовая ракетница SHI LAM-17 84mm, повреждённая при транспортировки...эффективность варьируется. От двух в одной партии.
+  description: Одноразовая ракетница SHI LAM-17 84mm, повреждённая при транспортировки... эффективность варьируется. От двух в одной партии.
   icon: { sprite: _Crescent/Objects/Weapons/Guns/disposablerpg.rsi, state: icon }
   productEntity: CrateSRMLauncher
   cost:
@@ -227,7 +227,7 @@
 - type: listing
   id: StoreListingSRMG8PoisonHandgrenade
   name: Ядовитая граната G-8
-  description: Ядовитая граната  G-8. В комплекте несколько штук.
+  description: Ядовитая граната G-8. В комплекте несколько штук.
   icon: { sprite: _Crescent/Objects/Weapons/Grenades/dsm_smoke.rsi, state: icon }
   productEntity: CrateSRMPoisonGrenade
   cost:
@@ -238,7 +238,7 @@
 - type: listing
   id: StoreListingSRMG4TwistcapHandgrenade
   name: Твисткап граната G-4
-  description: Твисткап граната  G-4. В комплекте несколько штук.
+  description: Твисткап граната G-4. В комплекте несколько штук.
   icon: { sprite: _Crescent/Objects/Weapons/Grenades/dsm_twist.rsi, state: icon }
   productEntity: CrateSRMTwistcapGrenade
   cost:
@@ -249,7 +249,7 @@
 - type: listing
   id: StoreListingSRMG3StickHandgrenade
   name: Липкая граната G-3
-  description: Липкая граната  G-3. В комплекте несколько штук.
+  description: Липкая граната G-3. В комплекте несколько штук.
   icon: { sprite: _Crescent/Objects/Weapons/Grenades/dsm_stick.rsi, state: icon }
   productEntity: CrateSRMStickGrenade
   cost:

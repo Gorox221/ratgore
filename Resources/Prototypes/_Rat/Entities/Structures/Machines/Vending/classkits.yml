@@ -182,7 +182,7 @@
       - id: MagazinePistolSubMachineGun
         name: 35-зарядный магазин для пистолета-пулемета (9x19 мм PSTF auto)
       - id: MagazineBoxRifle
-        name: коробка патронов (.20 винтовочные)
+        name: коробка патронов (7.62x51mm)
       - id: BoxLethalshot
         name: коробка ружейных патронов (.50 летальные)
       - id: MagazinePistol

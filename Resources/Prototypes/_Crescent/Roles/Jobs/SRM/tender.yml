@@ -12,7 +12,7 @@
     - !type:CharacterPlaytimeRequirement
       tracker: JobTenderSRM
       min: 36000 # 10 hours
-    RatRankSRMHunterJunior: []
+    RatRankSRMTenderJunior: []
   weight: 2
   startingGear: TenderGear
   alwaysUseSpawner: true
