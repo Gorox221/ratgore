@@ -1,9 +1,9 @@
 {
     "version": 1,
     "license": "",
-    "copyright": "sprites provided by @WillyBillyGilly, @_miket and @lokamatoka, licensed under CC-BY-SA 3.0",
+    "copyright": "sprites provided by @WillyBillyGilly and @_miket, licensed under CC-BY-SA 3.0",
     "size": {
-        "x": 64,
+        "x": 48,
         "y": 32
     },
     "states": [
@@ -15,15 +15,6 @@
         },
         {
             "name": "bolt-open"
-        },
-        {
-            "name": "mag-0"
-        },
-        {
-            "name": "mag-1"
-        },
-        {
-            "name": "mag-1"
         },
         {
             "name": "inhand-left",
