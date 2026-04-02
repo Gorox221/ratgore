@@ -16,19 +16,19 @@
   - type: ExplosionResistance
     damageCoefficient: 0.6
   - type: DegradeableArmor
-    armorMaxHealth: 1000
-    armorType: Metallic
-    armorRepair: SteelPlate
+    armorMaxHealth: 470
+    armorType: Ceramic
+    armorRepair: NTCeramic
     initialModifiers:
       flatReductions:
         Blunt: 35
         Slash: 35
-        Piercing: 50
+        Piercing: 70
         Heat: 20
         Caustic: 5
   - type: ClothingSpeedModifier
-    walkModifier: 0.90
-    sprintModifier: 0.90
+    walkModifier: 1
+    sprintModifier: 1
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitDraugr
   - type: StaticPrice
@@ -56,7 +56,7 @@
   - type: ExplosionResistance
     damageCoefficient: 0.6
   - type: DegradeableArmor
-    armorMaxHealth: 750
+    armorMaxHealth: 600
     armorType: Metallic
     armorRepair: PlasteelPlate
     initialModifiers:
@@ -90,7 +90,7 @@
   - type: ExplosionResistance
     damageCoefficient: 0.6
   - type: DegradeableArmor
-    armorMaxHealth: 750
+    armorMaxHealth: 650
     armorType: Metallic
     armorRepair: SteelPlate
     initialModifiers:
@@ -201,7 +201,7 @@
   - type: StaticPrice
     price: 250
   - type: ReverseEngineering
-    recipes: 
+    recipes:
       - ClothingOuterArmorServileAlseik
       - ClothingHeadHatServile
       - ClothingOuterArmorDraugrAlseik
@@ -238,7 +238,7 @@
   - type: StaticPrice
     price: 500
   - type: ReverseEngineering
-    recipes: 
+    recipes:
       - ClothingOuterArmorDraugrAlseik
       - ClothingHeadHatDraugr
       - ClothingOuterArmorServileAlseik
