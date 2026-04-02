@@ -149,6 +149,101 @@
         amount: 2
 
 - type: entity
+  id: CrateSRMNLHuntSupplies
+  parent: CrateGenericSteel
+  name: Hunt Supplies Shipment
+  description: Enough supplies to set up your hunt for slaves!
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxFlashbang
+        amount: 2
+      - id: BoxTeargasGrenades
+        amount: 1
+      - id: Bola
+        amount: 6
+      - id: Stunbaton
+        amount: 2
+      - id: RiotBulletShield
+        amount: 2
+      - id: RiotLaserShield
+        amount: 1
+
+- type: entity
+  id: CrateSRMBolaShipment
+  parent: CrateGenericSteel
+  name: Bola Supplies Shipment
+  description: A crate full of bola. Fascinating!
+  components:
+  - type: StorageFill
+    contents:
+      - id: Bola
+        amount: 8
+      - id: BolaEnergy
+        amount: 2
+
+- type: entity
+  id: CrateSRMDisablerShipment
+  parent: CrateGenericSteel
+  name: Disabler Shipment
+  description: A crate full of disablers. Fascinating!
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponDisabler
+        amount: 2
+      - id: WeaponDisablerSMG
+        amount: 1
+
+- type: entity
+  id: CrateSRMRenoShotgunShipment
+  parent: CrateGenericSteel
+  name: IRM DA-13 Reno Shipment
+  description: A crate with two IRM DA-13 Reno shotguns and four shell boxes. Special for The Hunt!
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponShotgunReno
+        amount: 2
+      - id: BoxLethalshot
+        amount: 4
+
+- type: entity
+  id: CrateSRMShotgunAMMOShipment
+  parent: CrateGenericSteel
+  name: IRM DA-13 Reno Shipment
+  description: A crate with six shotgun shell boxes. Special for The Hunt!
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxLethalshot
+        amount: 6
+
+- type: entity
+  id: CrateSRMDominatorLMGShipment
+  parent: CrateGenericSteel
+  name: IRM DA-12S Dominion Shipment
+  description: A crate with IRM DA-12S Dominion LMG and two ammo boxes. Special for The Hunt!
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponLightMachineGunDSMDominion
+        amount: 1
+      - id: MagazineLightRifleBox
+        amount: 2
+
+- type: entity
+  id: CrateSRMLMGAmmoShipment
+  parent: CrateGenericSteel
+  name: LMG Ammo Shipment
+  description: A crate with four LMG ammo boxes. Special for The Hunt!
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineLightRifleBox
+        amount: 4
+
+- type: entity
   id: CrateSRMIncendiaryGrenade
   parent: CrateGenericSteel
   name: Incendiary Grenade Shipment

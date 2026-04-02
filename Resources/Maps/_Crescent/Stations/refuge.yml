@@ -4,8 +4,8 @@ meta:
   engineVersion: 268.1.0
   forkId: ""
   forkVersion: ""
-  time: 04/02/2026 09:42:28
-  entityCount: 2411
+  time: 04/02/2026 16:18:48
+  entityCount: 2414
 maps: []
 grids:
 - 1
@@ -14775,17 +14775,17 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -5.6393948,-8.499005
       parent: 1
-  - uid: 1198
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -5.588045,3.173225
-      parent: 1
   - uid: 1199
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -1.4763672,8.847063
+      parent: 1
+  - uid: 2412
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -5.5218544,3.596471
       parent: 1
 - proto: ChairPilotSeat
   entities:
@@ -15411,14 +15411,19 @@ entities:
       rot: 3.141592653589793 rad
       pos: -9.5,-19.5
       parent: 1
-- proto: ComputerMassCloak
+- proto: ComputerIFFPOI
   entities:
   - uid: 1302
     components:
+    - type: MetaData
+      name: refuge IFF computer
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 0.5,8.5
       parent: 1
+    - type: IFFConsole
+      heatGeneration: 0
+      heatCapacity: 3
 - proto: ComputerPalletConsoleNFVeryLowMarket
   entities:
   - uid: 1303
@@ -17552,6 +17557,11 @@ entities:
     - type: Transform
       pos: -3.5976343,5.589371
       parent: 1
+  - uid: 2414
+    components:
+    - type: Transform
+      pos: -5.8656044,2.612096
+      parent: 1
 - proto: MagazineBoxMagnumAP
   entities:
   - uid: 1603
@@ -17963,6 +17973,14 @@ entities:
     components:
     - type: Transform
       pos: -6.5,-17.5
+      parent: 1
+- proto: PaperBin10
+  entities:
+  - uid: 2413
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -5.5,2.5
       parent: 1
 - proto: PaperBin20
   entities:
@@ -19252,21 +19270,21 @@ entities:
   - uid: 1836
     components:
     - type: Transform
-      pos: -6.450339,3.1075
+      pos: -5.2874794,2.612096
       parent: 1
 - proto: RubberStampDenied
   entities:
   - uid: 1837
     components:
     - type: Transform
-      pos: -6.182822,3.062902
+      pos: -5.2718544,2.799596
       parent: 1
 - proto: RubberStampHunters
   entities:
-  - uid: 1838
+  - uid: 1198
     components:
     - type: Transform
-      pos: -6.6881304,3.0777678
+      pos: -5.2718544,2.408971
       parent: 1
 - proto: SecurityTechFab
   entities:
@@ -20246,6 +20264,11 @@ entities:
       parent: 1
 - proto: TableWood
   entities:
+  - uid: 1838
+    components:
+    - type: Transform
+      pos: -5.5,2.5
+      parent: 1
   - uid: 1933
     components:
     - type: Transform
