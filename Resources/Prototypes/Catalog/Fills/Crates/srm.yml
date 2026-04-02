@@ -20,7 +20,7 @@
       - id: WeaponSubMachineGunBeetle
         amount: 2
       - id: MagazinePistolSubMachineGun
-        amount: 4
+        amount: 6
 
 - type: entity
   id: CrateSRMMedkit
@@ -57,6 +57,30 @@
       - id: WeaponRifleHunter
         amount: 1
       - id: MagazineRifle
+        amount: 4
+
+- type: entity
+  id: CrateSRMImperatorIRM
+  parent: CrateGenericSteel
+  name: IRM AVR-H Imperator Shipment
+  description: A shipment containing a IRM AVR-H Imperator sniper rifle and two magazines, stamped with the emblem of the Hunter's Pride Merchant's Guild.
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponSniperImperator
+        amount: 1
+      - id: MagazineAntiMateriel
+        amount: 3
+
+- type: entity
+  id: CrateSRMSterilizer
+  parent: CrateGenericSteel
+  name: HP FLM-21Min Sterilizer Shipment
+  description: A shipment containing a two HP FLM-21Min Sterilizer flamethrower, stamped with the emblem of the Hunter's Pride Merchant's Guild.
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponHPSterilizerFlamethrower
         amount: 2
 
 - type: entity
@@ -279,3 +303,14 @@
     contents:
       - id: MagazineRifle
         amount: 6
+
+- type: entity
+  id: CrateSRMSniperMag
+  parent: CrateGenericSteel
+  name: Sniper Rifle Magazine Shipment
+  description: A shipment containing of 15.2x169mm sniper rifle magazines, the crate has clearly seen better days.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineAntiMateriel
+        amount: 4

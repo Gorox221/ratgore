@@ -70,6 +70,28 @@
   - StoreCategorySRMWeapons
 
 - type: listing
+  id: StoreListingSRMImperatorSR
+  name: АВР-Н Император
+  description: Имперская крупнокалиберная снайперская винтовка. Использует крупный патрон 15,2×169 мм, поставляется с боеприпасами.
+  icon: { sprite: _Crescent/Objects/Weapons/Guns/beetle.rsi, state: icon }
+  productEntity: CrateSRMImperatorIRM
+  cost:
+    PietySRM: 4
+  categories:
+  - StoreCategorySRMWeapons
+
+- type: listing
+  id: StoreListingSRMSterilizerFT
+  name: ГО Стерилизатор
+  description: Компактный огнемёт производства Гордости Охотника. Идеально подходит для сжигания тел и ксеносов.
+  icon: { sprite: _Crescent/Objects/Weapons/Guns/beetle.rsi, state: icon }
+  productEntity: CrateSRMSterilizer
+  cost:
+    PietySRM: 3
+  categories:
+  - StoreCategorySRMWeapons
+
+- type: listing
   id: StoreListingSRMLauncher
   name: Украденная поставка SHI LAM-17 84mm
   description: Одноразовая ракетница SHI LAM-17 84mm, повреждённая при транспортировки... эффективность варьируется. От двух в одной партии.
