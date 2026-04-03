@@ -3,16 +3,26 @@
   name: job-name-deputymarshal
   description: job-description-deputymarshal
   playTimeTracker: JobDeputyMarshalCMM
+  ranks:
+    RatRankCMMMarshalMiddle:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobDeputyMarshalCMM
+      min: 72000 # 20 hours
+    RatRankCMMMarshalJunior:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobDeputyMarshalCMM
+      min: 36000 # 10 hours
+    RatRankCMMMinutemanTop: []
   weight: 32
   startingGear: DeputyMarshalGear
   alwaysUseSpawner: true
   requireAdminNotify: false
   icon: "JobIconDeputyMarshal"
-  supervisors: You answer to your Colonial Marshal.
+  supervisors: job-supervisors-cmm-deputy
   canBeAntag: false
   requirements:
     - !type:CharacterOverallTimeRequirement
-      min: 36000
+      min: 64800
     - !type:FactionRequirement
         factionID: "TSP"
     - !type:CharacterTraitRequirement
@@ -25,8 +35,17 @@
   special:
   - !type:AddComponentSpecial
     components:
-      - type: ChatRank
-        rank: crescent-rank-2ic
+      - type: HullrotFaction
+        faction: TSP
+      - type: LanguageAdder
+        addSpoken:
+          - American
+          - Tradeband
+        addUnderstood:
+          - American
+          - Tradeband
+  accessGroups:
+  - GeneralAccess
   access:
   - Command
   - Maintenance
@@ -38,6 +57,8 @@
   - External
   - Mercenary # Frontier
   - Captain # Frontier
+  - GliessSheriff
+  - GliessDockmaster
 
 - type: startingGear
   id: DeputyMarshalGear
@@ -47,7 +68,9 @@
     head: ClothingHeadHatCMMDeputyMarshal
     gloves: ClothingHandsGlovesCombat
     belt: ClothingBeltMinutemanPouches
+    back: ClothingBackpackMinuteman
     pocket1: WeaponRevolverSnubnose
+    pocket2: RatRubberStampCMM
     id: DeputyMarshalPDA
     ears: ClothingHeadsetCMM
     outerClothing: ClothingOuterArmorCMMDeputyCarapace

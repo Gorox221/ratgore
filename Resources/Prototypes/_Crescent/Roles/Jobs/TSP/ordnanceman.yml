@@ -3,14 +3,30 @@
   name: job-name-ordnanceman
   description: job-description-ordnanceman
   playTimeTracker: JobOrdnancemanCMM
-  weight: 18
+  ranks:
+    RatRankCMMMinutemanThird:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobOrdnancemanCMM
+      min: 108000 # 30 hours
+    RatRankCMMMinutemanSrLead:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobOrdnancemanCMM
+      min: 72000 # 20 hours
+    RatRankCMMMinutemanLead:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobOrdnancemanCMM
+      min: 36000 # 10 hours
+    RatRankCMMMinutemanSenior: []
+  weight: 26
   startingGear: OrdnancemanGear
   alwaysUseSpawner: true
   requireAdminNotify: false
-  icon: "JobIconOrdnanceman"
-  supervisors: You answer to your Colonial Marshal , Deputy Marshal and Watchmaster.
+  icon: "JobIconMinuteman"
+  supervisors: job-supervisors-cmm-sergeant
   canBeAntag: false
   requirements:
+    - !type:CharacterOverallTimeRequirement
+      min: 18000
     - !type:FactionRequirement
         factionID: "TSP"
     - !type:CharacterTraitRequirement
@@ -22,8 +38,17 @@
   special:
   - !type:AddComponentSpecial
     components:
-      - type: ChatRank
-        rank: crescent-rank-ordnance
+      - type: HullrotFaction
+        faction: TSP
+      - type: LanguageAdder
+        addSpoken:
+          - American
+          - Tradeband
+        addUnderstood:
+          - American
+          - Tradeband
+  accessGroups:
+  - GeneralAccess
   access:
   - Command
   - Maintenance
@@ -31,15 +56,20 @@
   - External
   - Mercenary # Frontier
   - Captain # Frontier
+  - GliessSheriff
+  - GliessDockmaster
 
 - type: startingGear
   id: OrdnancemanGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitCMMOrdnanceman
     shoes: ClothingShoesBootsCombat
-    head: ClothingHeadHelmetCMMOrdnanceman
+    head: ClothingHeadHatBeretCap
     gloves: ClothingHandsGlovesCombat
     belt: ClothingBeltMinutemanPouches
+    back: ClothingBackpackMinuteman
     id: OrdnancemanPDA
     ears: ClothingHeadsetCMM
     pocket1: WeaponPistolHKUSP
+    neck: ClothingNeckScarfCMMCloak
+    outerClothing: ClothingOuterArmorCMM

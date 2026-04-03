@@ -3,12 +3,30 @@
   name: job-name-machinist
   description: job-description-machinist
   playTimeTracker: JobMachinistCMM
+  ranks:
+    RatRankCMMMinutemanLead:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobMachinistCMM
+      min: 144000 # 40 hours
+    RatRankCMMMinutemanSenior:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobMachinistCMM
+      min: 108000 # 30 hours
+    RatRankCMMMinutemanMiddle:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobMachinistCMM
+      min: 72000 # 20 hours
+    RatRankCMMMinutemanJunior:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobMachinistCMM
+      min: 36000 # 10 hours
+    RatRankCMMMinutemanNovice: []
   weight: 22
   startingGear: MachinistGear
   alwaysUseSpawner: true
   requireAdminNotify: false
   icon: "JobIconMachinist"
-  supervisors: You answer to your Colonial Marshal, Deputy Marshal and Watchmaster.
+  supervisors: job-supervisors-cmm-minuteman
   canBeAntag: false
   requirements:
     - !type:FactionRequirement
@@ -21,8 +39,17 @@
   special:
   - !type:AddComponentSpecial
     components:
-      - type: ChatRank
-        rank: crescent-rank-machinist
+      - type: HullrotFaction
+        faction: TSP
+      - type: LanguageAdder
+        addSpoken:
+          - American
+          - Tradeband
+        addUnderstood:
+          - American
+          - Tradeband
+  accessGroups:
+  - GeneralAccess
   access:
   - Command
   - Maintenance
@@ -30,6 +57,8 @@
   - External
   - Mercenary # Frontier
   - Captain # Frontier
+  - GliessSheriff
+  - GliessDockmaster
 
 - type: startingGear
   id: MachinistGear
@@ -39,6 +68,7 @@
     head: ClothingHeadHelmetCMMMachinist
     gloves: ClothingHandsGlovesCombat
     belt: ClothingBeltUtilityEngineering
+    back: ClothingBackpackMinuteman
     id: MachinistPDA
     ears: ClothingHeadsetCMM
     pocket1: WeaponPistolHKUSP

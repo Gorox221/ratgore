@@ -3,12 +3,30 @@
   name: job-name-physician
   description: job-description-physician
   playTimeTracker: JobPhysicianCMM
+  ranks:
+    RatRankCMMMinutemanSrLead:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobPhysicianCMM
+      min: 144000 # 40 hours
+    RatRankCMMMinutemanLead:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobPhysicianCMM
+      min: 108000 # 30 hours
+    RatRankCMMMinutemanSenior:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobPhysicianCMM
+      min: 72000 # 20 hours
+    RatRankCMMMinutemanMiddle:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobPhysicianCMM
+      min: 36000 # 10 hours
+    RatRankCMMMinutemanJunior: []
   weight: 24
   startingGear: PhysicianGear
   alwaysUseSpawner: true
   requireAdminNotify: false
   icon: "JobIconCMMPhysician"
-  supervisors: You answer to your Colonial Marshal, Deputy Marshal and Watchmaster.
+  supervisors: job-supervisors-cmm-minuteman
   canBeAntag: false
   requirements:
     - !type:FactionRequirement
@@ -21,11 +39,20 @@
   special:
   - !type:AddComponentSpecial
     components:
-      - type: ChatRank
-        rank: crescent-rank-physician
+      - type: HullrotFaction
+        faction: TSP
+      - type: LanguageAdder
+        addSpoken:
+          - American
+          - Tradeband
+        addUnderstood:
+          - American
+          - Tradeband
       - type: CPRTraining
       - type: SurgerySpeedModifier
         speedModifier: 1.75
+  accessGroups:
+  - GeneralAccess
   access:
   - Command
   - Maintenance
@@ -33,6 +60,8 @@
   - External
   - Mercenary # Frontier
   - Captain # Frontier
+  - GliessSheriff
+  - GliessDockmaster
 
 - type: startingGear
   id: PhysicianGear
@@ -42,6 +71,7 @@
     head: ClothingHeadHatMinuteman
     gloves: ClothingHandsGlovesCombat
     belt: ClothingBeltMinutemanPouches
+    back: ClothingBackpackMinuteman
     id: PhysicianPDA
     ears: ClothingHeadsetCMM
     pocket1: WeaponPistolHKUSP

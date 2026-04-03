@@ -3,12 +3,30 @@
   name: job-name-minuteman
   description: job-description-minuteman
   playTimeTracker: JobMinutemanCMM
-  weight: 26
+  ranks:
+    RatRankCMMMinutemanLead:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobMinutemanCMM
+      min: 144000 # 40 hours
+    RatRankCMMMinutemanSenior:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobMinutemanCMM
+      min: 108000 # 30 hours
+    RatRankCMMMinutemanMiddle:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobMinutemanCMM
+      min: 72000 # 20 hours
+    RatRankCMMMinutemanJunior:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobMinutemanCMM
+      min: 36000 # 10 hours
+    RatRankCMMMinutemanNovice: []
+  weight: 18
   startingGear: MinutemanGear
   alwaysUseSpawner: true
   requireAdminNotify: false
-  icon: "JobIconMinuteman"
-  supervisors: You answer to your Colonial Marshal, Deputy Marshal and Watchmaster.
+  icon: "JobIconOrdnanceman"
+  supervisors: job-supervisors-cmm-minuteman
   canBeAntag: false
   requirements:
     - !type:FactionRequirement
@@ -23,8 +41,17 @@
   special:
   - !type:AddComponentSpecial
     components:
-      - type: ChatRank
-        rank: crescent-rank-minuteman
+      - type: HullrotFaction
+        faction: TSP
+      - type: LanguageAdder
+        addSpoken:
+          - American
+          - Tradeband
+        addUnderstood:
+          - American
+          - Tradeband
+  accessGroups:
+  - GeneralAccess
   access:
   - Command
   - Maintenance
@@ -33,6 +60,8 @@
   - External
   - Mercenary # Frontier
   - Captain # Frontier
+  - GliessSheriff
+  - GliessDockmaster
 
 - type: startingGear
   id: MinutemanGear
@@ -42,6 +71,7 @@
     head: ClothingHeadHatMinuteman
     gloves: ClothingHandsGlovesCombat
     belt: ClothingBeltMinutemanPouches
+    back: ClothingBackpackMinuteman
     pocket1: WeaponPistolHKUSP
     id: MinutemanPDA
     ears: ClothingHeadsetCMM

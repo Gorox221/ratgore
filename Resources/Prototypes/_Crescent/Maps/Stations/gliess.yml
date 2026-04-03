@@ -15,7 +15,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: outpost
         - type: StationNameSetup
-          mapNameTemplate: 'The Refuge'
+          mapNameTemplate: 'ОСР Убежище'
         - type: VesselDesignation
           designation: vessel-designation-headquarters
         - type: Grammar
@@ -60,10 +60,14 @@
         - type: StationJobs
           overflowJobs: []
           availableJobs:
-            GliessianDockmaster: [ 1, 1 ]
-            GliessianSheriff: [ 1, 1 ]
-            GliessianDeputy: [ 4, 4 ]
-            GliessianDockhand: [ 4, 4 ]
+            MarshalCMM: [ 1, 1 ]
+            DeputyMarshalCMM: [ 1, 1 ]
+            WatchmasterCMM: [ 2, 2 ]
+            OrdnancemanCMM: [ 2, 2 ]
+            PhysicianCMM: [ 3, 3 ]
+            MachinistCMM: [ 2, 2 ]
+            MinutemanCMM: [ 6, 6 ]
+            GliessianDockhand: [ 3, 3 ]
             Spacer: [ -1, -1 ]
 
 

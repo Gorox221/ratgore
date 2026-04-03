@@ -17,9 +17,13 @@
   color: "#9FED58"
   weight: 5
   roles:
-  - GliessianDockmaster
-  - GliessianSheriff
-  - GliessianDeputy
+  - OrdnancemanCMM
+  - MachinistCMM
+  - PhysicianCMM
+  - MinutemanCMM
+  - WatchmasterCMM
+  - DeputyMarshalCMM
+  - MarshalCMM
   - Spacer
   - GliessianDockhand
   editorHidden: false
@@ -89,6 +93,7 @@
   roles:
   - CommandantNCWL
   - KommissarNCWL
+  - MVDOfficerNCWL
   - MVDGruntNCWL
   - FleetkapitanNCWL
   - PartisanNCWL
@@ -142,22 +147,22 @@
   - GovernorDSM
   - AdvocatusDSM
   - ArchmaesterDSM
-  - RegentEmpireDSM # rat-change
-  - PretorianKnightDSM # rat-change
+  # - RegentEmpireDSM # rat-change | To Odleer: DELETE LATER
+  # - PretorianKnightDSM # rat-change | To Odleer: DELETE LATER
   editorHidden: false
 
-# - type: department
-#   id: SRM
-#   description: department-SRM-description
-#   color: "#4a6741"
-#   weight: 80
-#   roles:
-#   - TenderSRM
-#   - AcolyteSRM
-#   - HunterSRM
-#   - MontagneSRM
-#   - OverseerSRM
-#   editorHidden: false # i just like to see them for the numbers , SPCR 2025
+- type: department
+  id: SRM
+  description: department-SRM-description
+  color: "#4a6741"
+  weight: 80
+  roles:
+  - TenderSRM
+  - AcolyteSRM
+  - HunterSRM
+  - MontagneSRM
+  - OverseerSRM
+  editorHidden: false # i just like to see them for the numbers , SPCR 2025
 
 - type: department
   id: SHI
@@ -175,20 +180,20 @@
   - HosSHI
   editorHidden: false
 
-- type: department
-  id: CMM
-  description: department-CMM-description
-  color: "#5191e0"
-  weight: 70
-  roles:
-  - OrdnancemanCMM
-  - MachinistCMM
-  - PhysicianCMM
-  - MinutemanCMM
-  - WatchmasterCMM
-  - DeputyMarshalCMM
-  - MarshalCMM
-  editorHidden: true
+#- type: department
+#  id: CMM
+#  description: department-CMM-description
+#  color: "#5191e0"
+#  weight: 70
+#  roles:
+#  - OrdnancemanCMM
+#  - MachinistCMM
+#  - PhysicianCMM
+#  - MinutemanCMM
+#  - WatchmasterCMM
+#  - DeputyMarshalCMM
+#  - MarshalCMM
+#  editorHidden: true
 
 - type: department
   id: TAP
@@ -197,15 +202,15 @@
   weight: 55
   roles:
   - ProphetTAP
-  # - AcolyteTAP
-  # - TinkererTAP
-  # - TechminerTAP
-  # - HangarTechTAP
+  - AcolyteTAP
+  - TinkererTAP
+  - TechminerTAP
+  - HangarTechTAP
   - Antiquarian
   - BeltrunnerTAP
   - DraugrTAP
   - ServileTAP
-  editorHidden: true
+  editorHidden: false
 
 - type: department
   id: ATH
@@ -226,7 +231,7 @@
   - ChirurgeonATH
   - VorarbeiterATH
   - ArbeiterATH
-  editorHidden: true # i just like to see them for the numbers , SPCR 2025
+  editorHidden: true
   primary: false
 
   # CONSCRIPT

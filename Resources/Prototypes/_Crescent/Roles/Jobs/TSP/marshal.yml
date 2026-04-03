@@ -3,15 +3,27 @@
   name: job-name-marshal
   description: job-description-marshal
   playTimeTracker: JobMarshalCMM
+  ranks:
+    RatRankCMMMarshalHigh:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobMarshalCMM
+      min: 72000 # 20 hours
+    RatRankCMMMarshalLead:
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobMarshalCMM
+      min: 36000 # 10 hours
+    RatRankCMMMarshalSenior: []
   weight: 39
   startingGear: MarshalGear
   alwaysUseSpawner: true
   requireAdminNotify: false
   icon: "JobIconMarshal"
-  supervisors: You answer to your heart's contempt, whether it be protecting the sector's civilians or aiding criminal organizations.
+  supervisors: job-supervisors-cmm-marshal
   canBeAntag: false
   requirements:
     - !type:CharacterWhitelistRequirement
+    - !type:CharacterOverallTimeRequirement
+      min: 126000
     - !type:FactionRequirement
         factionID: "TSP"
     - !type:CharacterTraitRequirement
@@ -23,8 +35,17 @@
   special:
   - !type:AddComponentSpecial
     components:
-      - type: ChatRank
-        rank: crescent-rank-marshallie
+      - type: HullrotFaction
+        faction: TSP
+      - type: LanguageAdder
+        addSpoken:
+          - American
+          - Tradeband
+        addUnderstood:
+          - American
+          - Tradeband
+  accessGroups:
+  - GeneralAccess
   access:
   - Command
   - Maintenance
@@ -36,6 +57,8 @@
   - External
   - Mercenary # Frontier
   - Captain # Frontier
+  - GliessSheriff
+  - GliessDockmaster
 
 - type: startingGear
   id: MarshalGear
@@ -45,7 +68,9 @@
     head: ClothingHeadHatCMMMarshal
     gloves: ClothingHandsGlovesCombat
     belt: ClothingBeltMinutemanPouches
-    pocket1: WeaponRevolverSnubnose
+    back: ClothingBackpackMinuteman
+    pocket1: WeaponCaptainRevolverShotgun
+    pocket2: RatRubberStampCMMMarshal
     id: MarshalPDA
     ears: ClothingHeadsetCMM
     outerClothing: ClothingOuterArmorCMMCarapace
