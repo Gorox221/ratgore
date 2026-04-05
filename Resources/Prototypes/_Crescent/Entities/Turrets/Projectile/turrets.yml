@@ -31,10 +31,12 @@
     - type: Gun
       fireOnDropChance: 0
       projectileSpeed: 180
-      fireRate: 20
-      selectedMode: FullAuto
+      burstFireRate: 60
+      shotsPerBurst: 6
+      burstCooldown: 0.1
+      selectedMode: Burst
       availableModes:
-        - FullAuto
+        - Burst
       angleDecay: 1
       minAngle: 0.4
       maxAngle: 2.8
