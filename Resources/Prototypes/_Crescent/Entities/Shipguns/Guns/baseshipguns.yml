@@ -96,3 +96,6 @@
     powerUseActive: 100
     isArmed: true
     isPowerRequiredToFire: true
+  - type: DeviceLinkSink
+    ports:
+      - FillbotAnyItem

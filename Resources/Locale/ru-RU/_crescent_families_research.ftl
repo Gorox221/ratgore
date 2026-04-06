@@ -1,8 +1,5 @@
 # TAP Faction Research Localization - Russian
 
-## Disciplines
-research-discipline-families = Древнейший Пакт
-
 ## Technologies
 research-technology-families-auxiliary-artillery = Вспомогательная артиллерия
 research-technology-families-primary-artillery = Основная артиллерия

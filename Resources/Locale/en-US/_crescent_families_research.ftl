@@ -1,8 +1,5 @@
 # TAP Faction Research Localization - English
 
-## Disciplines
-research-discipline-families = Antiquarian Pact
-
 ## Technologies
 research-technology-families-auxiliary-artillery = Auxiliary Artillery
 research-technology-families-primary-artillery = Primary Artillery

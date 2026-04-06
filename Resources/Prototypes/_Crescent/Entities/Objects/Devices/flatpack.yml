@@ -1039,7 +1039,7 @@
     entity: WeaponTurretSmallArtillery
   - type: Sprite
     layers:
-    - state: box
+    - state: emitter
   - type: StaticPrice
     price: 900
   - type: ReverseEngineering # Sector Crescent
@@ -1057,7 +1057,7 @@
     entity: WeaponTurretMediumMachinegun
   - type: Sprite
     layers:
-    - state: box
+    - state: emitter
   - type: StaticPrice
     price: 750
   - type: ReverseEngineering # Sector Crescent
@@ -1075,7 +1075,7 @@
     entity: WeaponTurretSmallMachinegun
   - type: Sprite
     layers:
-    - state: box
+    - state: emitter
   - type: StaticPrice
     price: 500
   - type: ReverseEngineering # Sector Crescent
@@ -1111,7 +1111,7 @@
     entity: WeaponTurretLargeMachinegun
   - type: Sprite
     layers:
-    - state: box
+    - state: emitter
   - type: StaticPrice
     price: 1250
   - type: ReverseEngineering # Sector Crescent
@@ -1176,7 +1176,7 @@
     entity: BaseWeaponTurretShortbow
   - type: Sprite
     layers:
-    - state: box
+    - state: emitter
   - type: StaticPrice
     price: 850
   - type: ReverseEngineering # Sector Crescent
@@ -1194,7 +1194,7 @@
     entity: BaseWeaponTurretAzimuth
   - type: Sprite
     layers:
-    - state: box
+    - state: emitter
   - type: StaticPrice
     price: 1100
   - type: ReverseEngineering # Sector Crescent
@@ -1212,7 +1212,7 @@
     entity: BaseWeaponTurretArbalest
   - type: Sprite
     layers:
-    - state: box
+    - state: emitter
   - type: StaticPrice
     price: 1400
   - type: ReverseEngineering # Sector Crescent
@@ -1260,7 +1260,7 @@
     entity: WeaponTurretRetribution
   - type: Sprite
     layers:
-    - state: box
+    - state: emitter
   - type: StaticPrice
     price: 1000
 
@@ -1274,7 +1274,7 @@
     entity: WeaponTurretAbsolution
   - type: Sprite
     layers:
-    - state: box
+    - state: emitter
   - type: StaticPrice
     price: 1100
 
@@ -1304,7 +1304,7 @@
     entity: WeaponTurretStarburst
   - type: Sprite
     layers:
-    - state: box
+    - state: emitter
   - type: StaticPrice
     price: 1050
 
@@ -1318,7 +1318,7 @@
     entity: WeaponTurretBolter
   - type: Sprite
     layers:
-    - state: box
+    - state: emitter
   - type: StaticPrice
     price: 1075
 
@@ -1402,7 +1402,7 @@
     entity: ComputerDroneControl
   - type: Sprite
     layers:
-    - state: box
+    - state: ame-part
   - type: StaticPrice
     price: 2000
 
@@ -1416,6 +1416,6 @@
     entity: DroneController
   - type: Sprite
     layers:
-    - state: box
+    - state: ame-part
   - type: StaticPrice
     price: 1500

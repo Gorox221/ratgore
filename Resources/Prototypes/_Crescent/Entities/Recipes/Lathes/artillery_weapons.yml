@@ -149,15 +149,6 @@
     Brass: 500
     Plastic: 800
 
-- type: latheRecipe
-  id: MagazinePistolCaselessRifle
-  result: MagazinePistolCaselessRifle
-  category: Ammunition
-  completetime: 4
-  materials:
-    Steel: 150
-    Brass: 75
-
 # Autonomous Vehicle flatpacks
 
 - type: latheRecipe
