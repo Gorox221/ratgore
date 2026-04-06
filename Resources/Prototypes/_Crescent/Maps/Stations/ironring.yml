@@ -1,10 +1,10 @@
 - type: gameMap
-  id: ironring
+  id: Iron Ring
   mapName: 'Iron Ring'
   mapPath: /Maps/_Crescent/Stations/ironring.yml
   minPlayers: 0
   stations:
-    ironring:
+    Iron Ring:
       stationProto: StandardCrescentStation
       gridComponents:
         - type: BlockShipWeaponProjectileGrid
@@ -14,7 +14,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: outpost
         - type: StationNameSetup
-          mapNameTemplate: 'Irong Ring'
+          mapNameTemplate: 'Iron Ring'
         - type: VesselDesignation
           designation: vessel-designation-headquarters
         - type: VesselDescription
@@ -24,7 +24,7 @@
         - type: Grammar
           attributes:
             proper: true
-        - type: StationJobs
-          overflowJobs: []
-          availableJobs:
+        #- type: StationJobs
+          #overflowJobs: []
+          #availableJobs:
             #Vagrant: [ 20, 20 ]
