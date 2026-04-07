@@ -135,7 +135,7 @@
   prefix: Стажёр
   paygrade: SHI-W1
 
-# SHI - CorpSec
+## SHI - CorpSec
 - type: rank
   id: RatRankSHICorpSecChief
   name: Начальник корпоративной службы безопасности
