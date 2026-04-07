@@ -23,9 +23,9 @@
       flatReductions:
         Blunt: 20
         Slash: 20
-        Piercing: 45
+        Piercing: 40
         Heat: 20
-        Caustic: 20
+        Caustic: 10
   - type: ClothingSpeedModifier
     walkModifier: 0.90
     sprintModifier: 0.90
@@ -55,9 +55,9 @@
       flatReductions:
         Blunt: 30
         Slash: 30
-        Piercing: 65
-        Heat: 25
-        Caustic: 25
+        Piercing: 60
+        Heat: 20
+        Caustic: 20
   - type: ClothingSpeedModifier
     walkModifier: 0.90
     sprintModifier: 0.90
