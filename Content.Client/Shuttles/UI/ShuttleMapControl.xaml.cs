@@ -72,7 +72,7 @@ public sealed partial class ShuttleMapControl : BaseShuttleControl
     private readonly List<ShuttleExclusionObject> _viewportExclusions = new();
 
     //Changing from 256 512 512 to 256 2048 2048, this shows in testing to be about 4000 units ish. presume 1024>2048 units
-    public ShuttleMapControl() : base(1250f, 10000f, 10000f)
+    public ShuttleMapControl() : base(640f, 5120f, 5120f)
     {
         RobustXamlLoader.Load(this);
         _shuttles = EntManager.System<ShuttleSystem>();
