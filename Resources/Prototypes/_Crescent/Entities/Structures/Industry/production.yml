@@ -233,11 +233,11 @@
     runningState: ammolargeactive
     staticRecipes:
     - Cartridge90mm
-    - Cartridge90mmAP
-    - Cartridge90mmHE
+    # - Cartridge90mmAP
+    # - Cartridge90mmHE
     - Cartridge120mm
-    - Cartridge120mmFlux
-    - Cartridge120mmFlak
+    # - Cartridge120mmFlux
+    # - Cartridge120mmFlak
     - Cartridge300mm
     - Cartridge48mmRocket
     - Cartridge60mmRocket
