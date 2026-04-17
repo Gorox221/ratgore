@@ -4550,7 +4550,7 @@ entities:
       startingCharge: 476.77594
     - type: ApcPowerReceiverBattery
       enabled: True
-- proto: WeaponTurretSmallLaserPD
+- proto: WeaponTurretRetribution
   entities:
   - uid: 555
     components:
