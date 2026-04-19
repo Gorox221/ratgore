@@ -1,6 +1,6 @@
 ## RoundEndSystem
 
-round-end-system-shuttle-called-announcement = The hadal tide imminent. ETA: {$time} {$units}.
+round-end-system-shuttle-called-announcement = The Hadal tide is imminent. ETA: {$time} {$units}.
 round-end-system-shuttle-already-called-announcement = Hadal is approaching.
 round-end-system-shuttle-auto-called-announcement = The regional hadal expansion spike is inbound. ETA: {$time} {$units}. Recall the shuttle to extend the shift.
 round-end-system-shuttle-recalled-announcement = The Hadal tide has rescinded.
