@@ -11,6 +11,7 @@ using Content.Shared.Hands.EntitySystems;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Interaction;
 using Content.Shared.Item.ItemToggle;
+using Content.Shared.Mobs.Systems;
 using Content.Shared.Popups;
 using Content.Shared.Standing;
 using Content.Shared.Throwing;
@@ -44,6 +45,7 @@ public abstract partial class SharedProjectileSystem : EntitySystem
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly StandingStateSystem _standing = default!;
+    [Dependency] private readonly MobStateSystem _mobState = default!;
     [Dependency] private readonly ISharedAdminLogManager _adminLogger = default!;
     [Dependency] private readonly SharedColorFlashEffectSystem _color = default!;
     [Dependency] private readonly DamageableSystem _damageableSystem = default!;
@@ -271,7 +273,8 @@ public abstract partial class SharedProjectileSystem : EntitySystem
     {
         if (!component.EmbedOnThrow
             || HasComp<ThrownItemImmuneComponent>(args.Target)
-            || _standing.IsDown(args.Target))
+            || _standing.IsDown(args.Target)
+            || _mobState.IsDead(args.Target))
             return;
 
         TryEmbed(uid, args.Target, null, component, args.TargetPart);
@@ -279,7 +282,7 @@ public abstract partial class SharedProjectileSystem : EntitySystem
 
     private void OnEmbedProjectileHit(EntityUid uid, EmbeddableProjectileComponent component, ref ProjectileHitEvent args)
     {
-        if (!(args.Target is { }) || _standing.IsDown(args.Target)
+        if (!(args.Target is { }) || _standing.IsDown(args.Target) || _mobState.IsDead(args.Target)
             || !TryComp(uid, out ProjectileComponent? projectile)
             || !TryEmbed(uid, args.Target, args.Shooter, component))
             return;
