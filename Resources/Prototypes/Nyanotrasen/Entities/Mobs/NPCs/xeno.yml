@@ -104,20 +104,12 @@
 #    description: ghost-role-information-xeno-description
 #    rules: ghost-role-information-xeno-rules
 #  - type: GhostTakeoverAvailable
-#
-#- type: entity
-#  name: Rouny
-#  parent: MobXenoRounyNPC
-#  id: MobXenoRouny
-#  components:
-#  - type: GhostRole
-#    allowMovement: true
-#    allowSpeech: true
-#    makeSentient: true
-#    name: ghost-role-information-xeno-name
-#    description: ghost-role-information-xeno-description
-#    rules: ghost-role-information-xeno-rules
-#  - type: GhostTakeoverAvailable
+
+- type: entity
+  name: Rouny
+  parent: MobXenoRounyNPC
+  id: MobXenoRouny
+
 #
 #- type: entity
 #  name: Spitter
