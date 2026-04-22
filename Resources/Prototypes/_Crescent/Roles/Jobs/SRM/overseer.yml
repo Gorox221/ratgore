@@ -16,19 +16,18 @@
   weight: 100
   startingGear: OverseerGear
   alwaysUseSpawner: true
+  whitelisted: true # Rat
   requireAdminNotify: false
   icon: "JobIconOverseer"
   supervisors: job-supervisors-srm-overseer
   canBeAntag: false
   requirements:
-    - !type:CharacterWhitelistRequirement
+    #- !type:CharacterWhitelistRequirement
     - !type:FactionRequirement
       factionID: "SRM"
     - !type:CharacterSpeciesRequirement
       species:
         - Human
-    - !type:CharacterOverallTimeRequirement
-      min: 500000
     - !type:SexRequirement
       sex: Male
     - !type:CharacterTraitRequirement
@@ -82,7 +81,6 @@
     back: ClothingBackpackSRM
   storage:
     back:
-      - WeaponDSMPlasmaRifle
       - PietyRedeemableHigh
       - PietyRedeemableHigh
       - PietyRedeemableHigh

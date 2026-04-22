@@ -16,6 +16,7 @@
   weight: 102
   startingGear: CommandantNCWLGear
   alwaysUseSpawner: true
+  whitelisted: true # Rat
   requireAdminNotify: false
   icon: "JobIconNCWLFactionLeader"
   supervisors: job-supervisors-highcomm
@@ -29,7 +30,7 @@
       inverted: true
       species:
         - Voidborn
-    - !type:CharacterWhitelistRequirement
+    #- !type:CharacterWhitelistRequirement
     - !type:CharacterTraitRequirement
       inverted: true
       traits:

@@ -16,12 +16,12 @@
   weight: 39
   startingGear: MarshalGear
   alwaysUseSpawner: true
+  whitelisted: true # Rat
   requireAdminNotify: false
   icon: "JobIconMarshal"
   supervisors: job-supervisors-cmm-marshal
   canBeAntag: false
   requirements:
-    - !type:CharacterWhitelistRequirement
     - !type:CharacterOverallTimeRequirement
       min: 126000
     - !type:FactionRequirement

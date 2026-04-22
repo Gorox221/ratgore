@@ -1,0 +1,46 @@
+- type: gameMap
+  id: AuroraImperialis
+  mapName: 'БМС Аврора'
+  mapPath: /Maps/_Rat/Stations/aurora.yml # taleryn-version
+  minPlayers: 0
+  stations:
+    AuroraImperialis:
+      stationProto: StandardCrescentStation
+      gridComponents:
+        - type: BlockShipWeaponProjectileGrid
+        - type: MapIcon
+          iconType: Station
+      components:
+        - type: VesselIcon
+          iffIcon:
+            sprite: _Crescent/ShipIcons/ifficons.rsi
+            state: capital
+        - type: StationNameSetup
+          mapNameTemplate: 'БМС Аврора'
+        - type: VesselDesignation
+          designation: vessel-designation-headquarters
+        - type: VesselDescription
+          description: Могущественная имперская крепость, являющаяся последним оплотом порядка в системе.
+        - type: VesselMusic
+          ambientMusicPrototype: CountsmanMusic
+        - type: Grammar
+          attributes:
+            proper: true
+        - type: StationJobs
+          overflowJobs: []
+          availableJobs:
+            GovernorDSM: [ 1, 1 ]
+            AdjutantDSM: [ 1, 1 ]
+            KnightDSM: [ 4, 4 ]
+            RitterDSM: [ 3, 3 ]
+            LevymanDSM: [ -1, -1 ]
+            ArchmaesterDSM: [ 1, 1 ]
+            ScribeDSM: [ 6, 6 ]
+            SurgeonDSM: [ 4, 4 ]
+            TemplarDSM: [ 2, 2 ]
+            AdvocatusDSM: [ 1, 1 ]
+            CourtierDSM: [ 10, 10 ]
+            LaborDSM: [ 1, 1 ]
+            WealthDSM: [ 1, 1 ]
+            ForemanDSM: [ 3, 3 ]
+            FreeholderDSM: [ -1, -1 ]

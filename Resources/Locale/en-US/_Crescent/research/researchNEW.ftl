@@ -95,8 +95,8 @@ research-technology-imperial-psionicattunement = Psionic Attunement
 research-technology-imperial-basicrifling = Basic Rifling
 research-technology-imperial-surplusrifling = Surplus Armaments
 research-technology-imperial-covetor = Imperial Salvage Corvette
-research-technology-imperial-redemptor = Imperial Light Fighter
-research-technology-imperial-ibis = Imperial Heavy Fighter
+research-technology-imperial-praetorian = Imperial Bombardmant Class
+research-technology-imperial-fighters = Imperial Fighters
 research-technology-imperial-laelaps = Imperial Assault Frigate
 research-technology-imperial-nobleweapons = Imperial Nobility Swords
 research-technology-imperial-scribes = Imperial Scribe Vessels
@@ -118,6 +118,8 @@ research-technology-imperial-torturer = Imperial Stealth Bomber
 research-technology-imperial-magnate = Imperial Fire Support Vessel
 research-technology-imperial-craftcomps = Imperial Weapon Components
 research-technology-imperial-raider = Imperial Troop Transport
+research-technology-imperial-baserosterships = Standard Imperial Ships
+research-technology-imperial-baserosterinfantry = Standard Imperial Infantry Gear
 
 # NCWL
 research-technology-communard-clothes = Communard Clothes
@@ -142,7 +144,7 @@ research-technology-communard-bogatyr = Communard Battle Mech
 research-technology-communard-commienaut = Communard Juggernaut Suit
 research-technology-communard-vibrokukri = Communard Chengridz Vibrokukri
 research-technology-communard-craftcomps = Communard Weapon Components
-
+research-technology-communard-baserosterships = Standard Communard Ships
 # SHI
 research-technology-shinohara-clothes = Corporate Uniforms
 research-technology-shinohara-security = Corporate Security

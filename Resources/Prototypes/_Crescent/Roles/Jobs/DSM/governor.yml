@@ -17,11 +17,12 @@
   startingGear: GovernorGear
   alwaysUseSpawner: true
   requireAdminNotify: true
+  whitelisted: true # Rat
   icon: "JobIconImperialGovernor"
   supervisors: job-supervisors-imperial
   canBeAntag: false
   requirements:
-    - !type:CharacterWhitelistRequirement
+    #- !type:CharacterWhitelistRequirement
     - !type:FactionRequirement
       factionID: "DSM"
     - !type:CharacterOverallTimeRequirement

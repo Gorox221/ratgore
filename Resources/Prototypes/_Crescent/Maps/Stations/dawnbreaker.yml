@@ -1,16 +1,18 @@
 - type: gameMap
   id: Dawnbreaker
-  mapName: 'ТК Секира'
-  mapPath: /Maps/_Crescent/Stations/dawnbreaker.yml
+  mapName: 'ТК Анвил'
+  mapPath: /Maps/_Rat/Stations/byblik.yml # Rat-change
   minPlayers: 0
   stations:
     Dawnbreaker:
       stationProto: StandardCrescentStation
       gridComponents:
         - type: BlockShipWeaponProjectileGrid
+        - type: MapIcon
+          iconType: Station
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'ТК Секира'
+          mapNameTemplate: 'ТК Анвил'
         - type: VesselDesignation
           designation: vessel-designation-headquarters
         - type: VesselMusic
@@ -22,5 +24,5 @@
           overflowJobs: []
           availableJobs:
             IntelligenceOfficerNCSP: [ 1, 1 ]
-            OperativeNCSP: [ 4, 4 ]
+            OperativeNCSP: [ 3, 3 ]
             CyberdawnTechNCSP: [ 3, 3 ]

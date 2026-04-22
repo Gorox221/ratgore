@@ -252,6 +252,7 @@
   - type: SurgeryTarget
   - type: MovedByPressure
     cutoffTime: 1.0
+  - type: TTS # Art-TTS
 
 - type: entity
   save: false
@@ -356,7 +357,7 @@
         maxDistance: 3
         rolloffFactor: 2
         volume: -10
-  #- type: HadalCorrosion # HULLROT edit: Humanoids are affected by Hadal Corrosion.
+  - type: HadalCorrosion # HULLROT edit: Humanoids are affected by Hadal Corrosion.
 
 - type: entity
   save: false
