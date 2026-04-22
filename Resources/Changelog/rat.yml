@@ -671,5 +671,12 @@ Entries:
     id: 84
     time: '2026-04-20T09:00:45.0000000+00:00'
     url: https://github.com/ss14-art/ratgore/pull/139
+  - author: freycyik
+    changes:
+      - type: Tweak
+        message: Увеличенно расстояние консоли Дронов вдвое
+    id: 85
+    time: '2026-04-22T12:06:24.0000000+00:00'
+    url: https://github.com/ss14-art/ratgore/pull/137
 Name: Rat
 Order: -1
