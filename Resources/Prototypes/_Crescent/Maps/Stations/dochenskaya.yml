@@ -9,6 +9,7 @@
       gridComponents:
         - type: MapIcon
           iconType: Station
+        - type: PreventPilot
       components:
         - type: StationNameSetup
           mapNameTemplate: 'ПК Доченская'
@@ -21,6 +22,11 @@
           designation: vessel-designation-outpost
         - type: StationJobs
           overflowJobs: []
-          availableJobs:
+          availableJobs: #10 total
             ForemanNCSP: [ 1, 1 ]
-            ShipbreakerNCSP: [ 4, 4 ]
+            ShipbreakerNCSP: [ 7, 7 ]
+
+
+
+
+

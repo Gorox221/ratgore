@@ -576,7 +576,8 @@
     - type: BallisticAmmoProvider
       soundInsert:
         path: /Audio/Weapons/Guns/UnionfallWeapons/amr_close_1.ogg
-      fillWithDoAfter: false
+      fillWithDoAfter: true
+      fillDelay: 1.5
       cycleable: true
       capacity: 4
       proto: Cartridge120mm
@@ -742,7 +743,7 @@
       soundInsert:
         path: /Audio/Weapons/Guns/UnionfallWeapons/amr_close_1.ogg
       fillWithDoAfter: true
-      fillDelay: 1
+      fillDelay: 5
       cycleable: true
       capacity: 2
       proto: Cartridge300mm
@@ -782,7 +783,7 @@
     - type: ApcPowerReceiver
       powerLoad: 8500
     - type: BallisticAmmoProvider
-      fillDelay: 1
+      fillDelay: 5
       cycleable: true
       capacity: 2
     - type: Destructible
